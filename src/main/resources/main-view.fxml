@@ -17,10 +17,10 @@
   <!-- Left: List of Tours (Anchored to the Left) -->
   <left>
     <VBox maxWidth="200" VBox.vgrow="ALWAYS">
-      <ListView fx:id="tourListView" onMouseClicked="#onTourSelected" VBox.vgrow="ALWAYS"/>
+      <ListView fx:id="tourListView" VBox.vgrow="ALWAYS" onMouseClicked="#onTourSelected"/>
       <HBox spacing="5" style="-fx-padding: 5;">
-        <Button fx:id="addTourButton" text="Add"/>
-        <Button fx:id="editTourButton" text="Edit"/>
+        <Button fx:id="addTourButton" text="Add" onAction="#onAddClick"/>
+        <Button fx:id="editTourButton" text="Edit" onAction="#onEditClick"/>
         <Button fx:id="deleteTourButton" text="Delete"/>
       </HBox>
     </VBox>
@@ -32,33 +32,29 @@
 
       <Label text="Tour Details" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourNameLabel" style="-fx-text-fill:gray" text="Name:"/>
-        <Text fx:id="tourName" text="None"/>
+        <Label fx:id="tourNameLabel" style="-fx-text-fill:gray" text="Name: "/>
+        <Text fx:id="tourName" text="This is a test"/>
       </HBox>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourToLabel" style="-fx-text-fill:gray" text="To:"/>
-        <Text fx:id="tourTo" text="None"/>
+        <Label fx:id="tourToLabel" style="-fx-text-fill:gray" text="To: "/>
+        <Text fx:id="tourTo" text="This is a test"/>
       </HBox>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourFromLabel" style="-fx-text-fill:gray" text="From:"/>
-        <Text fx:id="tourFrom" text="None"/>
+        <Label fx:id="tourFromLabel" style="-fx-text-fill:gray" text="From: "/>
+        <Text fx:id="tourFrom" text="This is a test"/>
       </HBox>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourDistanceLabel" style="-fx-text-fill:gray" text="Distance:"/>
-        <Text fx:id="tourDistance" text="None"/>
+        <Label fx:id="tourDistanceLabel" style="-fx-text-fill:gray" text="Distance: "/>
+        <Text fx:id="tourDistance" text="This is a test"/>
       </HBox>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourTimeLabel" style="-fx-text-fill:gray" text="Estimated Time:"/>
-        <Text fx:id="tourTime" text="None"/>
+        <Label fx:id="tourTimeLabel" style="-fx-text-fill:gray" text="Estimated Time: "/>
+        <Text fx:id="tourTime" text="This is a test"/>
       </HBox>
       <HBox alignment="CENTER_LEFT">
-        <Label fx:id="tourDescLabel" style="-fx-text-fill:gray" text="Description:" minWidth="10"/>
-
-          <Text fx:id="tourDesc" text="None"  style="-fx-min-height: 80px" wrappingWidth="400"/>
-
+        <Label fx:id="tourDescLabel" style="-fx-text-fill:gray" text="Description: "/>
+        <Text fx:id="tourDesc" text="Description" style="-fx-min-height: 80px" wrappingWidth="400"/>
       </HBox>
-
-
 
     </VBox>
   </center>

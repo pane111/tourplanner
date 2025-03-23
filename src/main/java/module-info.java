@@ -8,4 +8,6 @@ module org.example.tourplanner {
     exports app;
     exports View;
     opens View to javafx.fxml;
+    exports ViewModel to javafx.fxml;
+    opens ViewModel to javafx.fxml;
 }
