@@ -12,57 +12,6 @@
     -fx-margin: 5;
 }
 
-/* Style the top search bar */
-.top {
-    -fx-background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent dark overlay for contrast */
-    -fx-padding: 15;
-}
-
-.top .text-field {
-    -fx-background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
-    -fx-text-fill: #2c3e50;
-    -fx-prompt-text-fill: #95a5a6;
-    -fx-font-size: 14px;
-    -fx-border-radius: 4px;
-    -fx-padding: 5 10;
-}
-
-.top .button {
-    -fx-background-color: #3498db;
-    -fx-text-fill: white;
-    -fx-border-radius: 4px;
-    -fx-font-weight: bold;
-    -fx-padding: 5 15;
-}
-
-.top .button:hover {
-    -fx-background-color: #2980b9;
-}
-
-/* Style the left list area */
-.left {
-    -fx-background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    -fx-border-color: #ecf0f1;
-    -fx-border-width: 1;
-    -fx-padding: 10;
-    -fx-border-radius: 4px;
-}
-
-.list-view {
-    -fx-background-color: white;
-    -fx-border-color: #ecf0f1;
-    -fx-border-width: 1;
-    -fx-font-size: 13px;
-    -fx-cell-size: 45px;
-}
-
-.list-view .list-cell {
-    -fx-padding: 10;
-}
-
-.list-view .list-cell:hover {
-    -fx-background-color: #ecf0f1;
-}
 
 /* Buttons in the list section */
 .button {
@@ -77,38 +26,6 @@
     -fx-background-color: #2980b9;
 }
 
-/* Style the details section */
-.center {
-    -fx-background-color: #56a2d8;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-border-radius: 4px;
-    -fx-min-width: 80px;
-    -fx-padding: 5 15;
-}
-
-.center .label {
-    -fx-font-size: 16px;
-    -fx-text-fill: #2c3e50;
-    -fx-font-weight: normal;
-    -fx-padding: 5 0;
-}
-
-.center .label#tourNameLabel {
-    -fx-font-weight: bold;
-    -fx-font-size: 18px;
-    -fx-text-fill: #2980b9;
-}
-
-.center .label#tourFromLabel,
-.center .label#tourToLabel {
-    -fx-text-fill: #7f8c8d;
-}
-
-.center .label#tourDistanceLabel,
-.center .label#tourEstimatedTimeLabel {
-    -fx-text-fill: #34495e;
-}
 
 /* Add shadow effect for the whole window */
 .root {
@@ -133,3 +50,4 @@
 .button:pressed {
     -fx-background-color: #2191d6;
 }
+
