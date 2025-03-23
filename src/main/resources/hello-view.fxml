@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+
+  <!-- Top: Search Bar -->
+  <top>
+    <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 10;">
+      <TextField fx:id="searchField" promptText="Search tours..."/>
+      <Button fx:id="searchButton" text="Search"/>
+    </HBox>
+  </top>
+
+  <!-- Left: List of Tours (Anchored to the Left) -->
+  <left>
+    <VBox maxWidth="200" VBox.vgrow="ALWAYS">
+      <ListView fx:id="tourListView" VBox.vgrow="ALWAYS"/>
+      <HBox spacing="5" style="-fx-padding: 5;">
+        <Button fx:id="addTourButton" text="Add"/>
+        <Button fx:id="editTourButton" text="Edit"/>
+        <Button fx:id="deleteTourButton" text="Delete"/>
+      </HBox>
+    </VBox>
+  </left>
+
+  <!-- Center: Tour Details (Filling Remaining Space) -->
+  <center>
+    <VBox spacing="10" style="-fx-padding: 10; -fx-border-color: gray; -fx-border-width: 1;" VBox.vgrow="ALWAYS">
+      <Label text="Tour Details" style="-fx-font-weight: bold;"/>
+      <Label fx:id="tourNameLabel" text="Name: "/>
+      <Label fx:id="tourFromLabel" text="From: "/>
+      <Label fx:id="tourToLabel" text="To: "/>
+      <Label fx:id="tourDistanceLabel" text="Distance: "/>
+      <Label fx:id="tourEstimatedTimeLabel" text="Estimated Time: " wrapText="true"/>
+    </VBox>
+  </center>
+
+</BorderPane>
+
+
+
