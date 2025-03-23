@@ -79,7 +79,8 @@ public class TPController {
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
-            stage.setTitle("Bearbeiten");
+
+            stage.setTitle("Edit Tour");
             stage.setScene(new Scene(root));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.show();
@@ -95,12 +96,28 @@ public class TPController {
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
-            stage.setTitle("Neue Tour");
+            stage.setTitle("Add New Tour");
             stage.setScene(new Scene(root));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void onDeleteClick() {
+        Tour selectedTour = tourListView.getSelectionModel().getSelectedItems().getLast();
+        if (selectedTour != null) {
+            tours.remove(selectedTour);
+            tourListView.setItems(tours);
+            tourName.setText("");
+            tourFrom.setText("");
+            tourTo.setText("");
+            tourDistance.setText("");
+            tourDesc.setText("");
+            tourTime.setText("");
+            tourListView.getSelectionModel().clearSelection();
         }
     }
 

@@ -21,7 +21,7 @@
       <HBox spacing="5" style="-fx-padding: 5;">
         <Button fx:id="addTourButton" text="Add" onAction="#onAddClick"/>
         <Button fx:id="editTourButton" text="Edit" onAction="#onEditClick"/>
-        <Button fx:id="deleteTourButton" text="Delete"/>
+        <Button fx:id="deleteTourButton" text="Delete" onAction="#onDeleteClick"/>
       </HBox>
     </VBox>
   </left>
