@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -103,7 +104,7 @@ public class TPController extends Controller {
                 Parent root = fxmlLoader.load();
 
                 Stage stage = new Stage();
-
+                stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
                 stage.setTitle("Edit Tour");
                 Scene scene = new Scene(root);
                 scene.getStylesheets().add(getClass().getResource("/modalStyle.css").toExternalForm());
@@ -128,7 +129,7 @@ public class TPController extends Controller {
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
-
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
             stage.setTitle("Add New Tour");
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("/modalStyle.css").toExternalForm());
