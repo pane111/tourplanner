@@ -3,7 +3,10 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
-<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.TPController">
+
 
   <!-- Top: Search Bar -->
   <top>
@@ -18,8 +21,8 @@
     <VBox maxWidth="200" VBox.vgrow="ALWAYS">
       <ListView fx:id="tourListView" VBox.vgrow="ALWAYS"/>
       <HBox spacing="5" style="-fx-padding: 5;">
-        <Button fx:id="addTourButton" text="Add"/>
-        <Button fx:id="editTourButton" text="Edit"/>
+        <Button fx:id="addTourButton" text="Add" onAction="#onAddClick"/>
+        <Button fx:id="editTourButton" text="Edit" onAction="#onEditClick"/>
         <Button fx:id="deleteTourButton" text="Delete"/>
       </HBox>
     </VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.tourplanner.EditController"
+            prefHeight="200.0" prefWidth="400.0">
+
+    <children>
+        <VBox alignment="CENTER" spacing="10" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <Label text="Edit Tour" />
+            <TextField fx:id="nameField" promptText="Tourname" />
+            <Button text="Safe" onAction="#onSave"/>
+
+        </VBox>
+    </children>
+</AnchorPane>
