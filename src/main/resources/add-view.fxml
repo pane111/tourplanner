@@ -2,47 +2,60 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Text?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="ViewModel.AddController"
-            style="-fx-padding:10px"
-            prefWidth="400.0" prefHeight="250.0">
+            style="-fx-padding:2px"
+            minWidth="1000">
 
     <children>
-        <VBox spacing="10"  alignment="CENTER_LEFT" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
-            <Label text="Add Tour" style="-fx-font-weight:bold"/>
+        <VBox  alignment="CENTER_LEFT" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <Label text="Add Tour" style="-fx-font-weight:bold; -fx-font-size:20px"/>
+            <HBox>
+                <VBox>
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="Name: "/>
+                        <TextField fx:id="nameField" promptText="Going Around"/>
+                    </VBox>
 
-            <VBox alignment="CENTER_LEFT">
-                <Label text="Name: "/>
-                <TextField fx:id="nameField" promptText="Going Around"/>
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="To: "/>
+                        <TextField fx:id="toField" promptText="Albuquerque"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="From: "/>
+                        <TextField fx:id="fromField" promptText="Dallas"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="Distance (in km): "/>
+                        <TextField fx:id="distField" promptText="1000.0"/>
+                    </VBox>
+
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="Est. Duration: "/>
+                        <TextField fx:id="durationField" promptText="50 hours"/>
+                    </VBox>
+
+                </VBox>
+
+                <VBox alignment="CENTER_LEFT">
+                    <Label text="Description: "/>
+                    <TextArea fx:id="descriptionField" promptText="A scenic route."/>
+                </VBox>
+
+            </HBox>
+            <VBox alignment="BOTTOM_RIGHT">
+                <Label fx:id="errorField" style="-fx-text-fill:red" />
+                <Button text="Add" onAction="#onAdd"/>
+
             </VBox>
+            <HBox alignment="BOTTOM_RIGHT">
+                <Button text="Cancel" onAction="#onCancel" style="-fx-background-color: darkgray"/>
+            </HBox>
 
-            <VBox alignment="CENTER_LEFT">
-                <Label text="To: "/>
-                <TextField fx:id="toField" promptText="Albuquerque"/>
-            </VBox>
-
-            <VBox alignment="CENTER_LEFT">
-                <Label text="From: "/>
-                <TextField fx:id="fromField" promptText="Dallas"/>
-            </VBox>
-
-            <VBox alignment="CENTER_LEFT">
-                <Label text="Distance: "/>
-                <TextField fx:id="distField" promptText="1000.0"/>
-            </VBox>
-
-            <VBox alignment="CENTER_LEFT">
-                <Label text="Est. Duration: "/>
-                <TextField fx:id="durationField" promptText="50 hours"/>
-            </VBox>
-
-            <VBox alignment="CENTER_LEFT">
-                <Label text="Description: "/>
-                <TextArea fx:id="descriptionField" promptText="A scenic route."/>
-            </VBox>
-
-            <Button text="Add" onAction="#onAdd"/>
         </VBox>
     </children>
 </AnchorPane>

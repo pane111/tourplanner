@@ -1,4 +1,4 @@
-package View;
+package ViewModel;
 
 import Model.Tour;
 import javafx.collections.FXCollections;
@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TPController {
+public class TPController extends Controller {
     @FXML
     private Text tourName;
     @FXML
@@ -37,6 +37,8 @@ public class TPController {
 
     @FXML
     void initialize() {
+
+        Mediator.getInstance().tpc=this;
         tours.add(new Tour("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","0"));
         tours.add(new Tour("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","1"));
         tours.add(new Tour("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "2"));
@@ -58,6 +60,16 @@ public class TPController {
 
     }
 
+    public void addTourToList(Tour tour) {
+        tours.add(tour);
+        tourListView.setItems(tours);
+    }
+
+    public void removeLastSelectedTour() {
+        tours.remove(tourListView.getSelectionModel().getSelectedItem());
+        tourListView.setItems(tours);
+    }
+
     @FXML
     private void onTourSelected() {
         Tour selectedTour = tourListView.getSelectionModel().getSelectedItem();
@@ -75,19 +87,29 @@ public class TPController {
     @FXML
     private void onEditClick() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/edit-view.fxml"));
-            Parent root = fxmlLoader.load();
+            Tour selectedTour = tourListView.getSelectionModel().getSelectedItems().getLast();
+            if (selectedTour != null) {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/edit-view.fxml"));
+                Parent root = fxmlLoader.load();
 
-            Stage stage = new Stage();
+                Stage stage = new Stage();
 
-            stage.setTitle("Edit Tour");
-            stage.setScene(new Scene(root));
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.show();
+                stage.setTitle("Edit Tour");
+                Scene scene = new Scene(root);
+                scene.getStylesheets().add(getClass().getResource("/modalStyle.css").toExternalForm());
+                stage.setScene(scene);
+                stage.initModality(Modality.APPLICATION_MODAL);
+                Mediator.getInstance().edit.fillFields(selectedTour);
+                stage.show();
+            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+
 
     @FXML
     private void onAddClick() {
@@ -96,8 +118,11 @@ public class TPController {
             Parent root = fxmlLoader.load();
 
             Stage stage = new Stage();
+
             stage.setTitle("Add New Tour");
-            stage.setScene(new Scene(root));
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/modalStyle.css").toExternalForm());
+            stage.setScene(scene);
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.show();
         } catch (IOException e) {

@@ -3,10 +3,11 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
-<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TPController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ViewModel.TPController"
+>
 
-  <!-- Top: Search Bar -->
+
   <top>
     <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 10;">
       <TextField fx:id="searchField" promptText="Search tours..."/>
@@ -14,7 +15,6 @@
     </HBox>
   </top>
 
-  <!-- Left: List of Tours (Anchored to the Left) -->
   <left>
     <VBox maxWidth="200" VBox.vgrow="ALWAYS">
       <ListView fx:id="tourListView" VBox.vgrow="ALWAYS" onMouseClicked="#onTourSelected"/>
@@ -26,7 +26,6 @@
     </VBox>
   </left>
 
-  <!-- Center: Tour Details (Filling Remaining Space) -->
   <center>
     <VBox spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
 
