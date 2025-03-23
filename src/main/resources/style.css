@@ -11,6 +11,9 @@
     -fx-padding: 10;
     -fx-margin: 5;
 }
+.label {
+    -fx-font-weight:bold;
+}
 
 
 /* Buttons in the list section */
