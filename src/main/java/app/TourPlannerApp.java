@@ -13,10 +13,13 @@ public class TourPlannerApp extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
-        // Load the CSS file
+
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
-        primaryStage.setMinWidth(800);
+
+        primaryStage.setMinWidth(900);
+
         primaryStage.setMinHeight(450);
+
         primaryStage.setTitle("Tour Planner");
         primaryStage.setScene(scene);
         primaryStage.show();
