@@ -3,6 +3,6 @@ module org.example.tourplanner {
     requires javafx.fxml;
 
 
-    opens org.example.tourplanner to javafx.fxml;
-    exports org.example.tourplanner;
+    opens app to javafx.fxml;
+    exports app;
 }
