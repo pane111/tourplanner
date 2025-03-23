@@ -11,7 +11,7 @@
   <top>
     <HBox spacing="10" alignment="CENTER_LEFT" style="-fx-padding: 10;">
       <TextField fx:id="searchField" promptText="Search tours..."/>
-      <Button fx:id="searchButton" text="Search"/>
+      <Button fx:id="searchButton" text="Search" onAction="#onSearch"/>
     </HBox>
   </top>
 

@@ -3,12 +3,16 @@ package ViewModel;
 import Model.Tour;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -16,6 +20,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TPController extends Controller {
+    public TextField searchField;
+    public Button searchButton;
     @FXML
     private Text tourName;
     @FXML
@@ -33,8 +39,10 @@ public class TPController extends Controller {
     @FXML
     private ListView<Tour> tourListView;
 
-    private ObservableList<Tour> tours = FXCollections.observableArrayList();
 
+
+    private ObservableList<Tour> tours = FXCollections.observableArrayList();
+    private FilteredList<Tour> filteredTours;
     @FXML
     void initialize() {
 
@@ -59,6 +67,8 @@ public class TPController extends Controller {
 
 
     }
+
+
 
     public void addTourToList(Tour tour) {
         tours.add(tour);
@@ -146,4 +156,9 @@ public class TPController extends Controller {
         }
     }
 
+    public void onSearch(ActionEvent actionEvent) {
+        filteredTours = new FilteredList<>(tours);
+        filteredTours.setPredicate(tour -> tour.getName().toLowerCase().contains(searchField.getText().toLowerCase()));
+        tourListView.setItems(filteredTours);
+    }
 }
