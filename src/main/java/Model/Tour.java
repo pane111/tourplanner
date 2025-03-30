@@ -4,30 +4,16 @@ package Model;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter @Setter
 public class Tour {
 
-    @Getter
-    @Setter
+
     private String name;
-    @Getter
-    @Setter
     private String from;
-    @Getter
-    @Setter
     private String to;
-    @Getter
-    @Setter
     private Double distance;
-    @Getter
-    @Setter
     private String estimatedTime;
-
-    @Getter
-    @Setter
     private String description;
-
-    @Getter
-    @Setter
     private String id;
 
     public Tour(String name, String from, String to, Double distance, String estimatedTime, String description, String id) {
@@ -38,6 +24,11 @@ public class Tour {
         this.estimatedTime = estimatedTime;
         this.description = description;
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
 

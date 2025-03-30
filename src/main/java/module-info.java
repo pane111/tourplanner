@@ -9,4 +9,6 @@ module org.example.tourplanner {
     exports app;
     opens ViewModel to javafx.fxml;
     exports ViewModel;
+    exports Controller;
+    opens Controller to javafx.fxml;
 }

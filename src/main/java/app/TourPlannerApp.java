@@ -19,7 +19,7 @@ public class TourPlannerApp extends Application {
 
         primaryStage.setMinWidth(900);
 
-        primaryStage.setMinHeight(450);
+        primaryStage.setMinHeight(650);
         primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
         primaryStage.setTitle("Tour Planner");
         primaryStage.setScene(scene);
