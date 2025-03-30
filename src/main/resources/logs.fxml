@@ -14,7 +14,7 @@
             >
     <HBox minWidth="800" fx:id="mainDetailView" spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
         <VBox style="-fx-background-color: white">
-            <ListView fx:id="logsList"/>
+            <fx:include source="loglist.fxml"/>
         </VBox>
         <VBox>
             <Label text="Tour Logs" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>

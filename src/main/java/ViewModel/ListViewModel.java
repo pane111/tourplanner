@@ -18,9 +18,9 @@ public class ListViewModel {
     private Tour selectedTour;
 
 
-    Tour dummyTour1 = new Tour("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","0");
-    Tour dummyTour2 = new Tour("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","1");
-    Tour dummyTour3 = new Tour("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "2");
+    Tour dummyTour1 = new Tour("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","1");
+    Tour dummyTour2 = new Tour("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","2");
+    Tour dummyTour3 = new Tour("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "3");
 
     public ListViewModel(StringProperty searchText) {
         tours.add(dummyTour1);
@@ -35,7 +35,7 @@ public class ListViewModel {
 
     }
     public void addTour(Tour tour) {
-        tour.setId(String.valueOf(tours.size()));
+        tour.setId(String.valueOf(tours.size()+1));
         tours.add(tour);
         for (Tour t : tours) {
             System.out.println(t.toString()+ ", ID: " +t.getId());

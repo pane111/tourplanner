@@ -22,6 +22,7 @@ public class ListController {
         Mediator.getInstance().listController = this;
         tourListView.setItems(viewModel.getFilteredTours());
 
+
     }
     public Tour getLastSelectedItem() {
         Tour selectedTour = tourListView.getSelectionModel().getSelectedItems().getLast();
