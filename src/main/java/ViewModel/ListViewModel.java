@@ -35,7 +35,11 @@ public class ListViewModel {
 
     }
     public void addTour(Tour tour) {
+        tour.setId(String.valueOf(tours.size()));
         tours.add(tour);
+        for (Tour t : tours) {
+            System.out.println(t.toString()+ ", ID: " +t.getId());
+        }
     }
     public void removeTour(Tour tour) {
         tours.remove(tour);
