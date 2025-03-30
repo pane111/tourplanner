@@ -7,37 +7,50 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="Controller.DetailsController">
-    <VBox spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
+    <HBox fx:id="mainDetailView" spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
+        <VBox>
+            <Label text="Tour Details" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourNameLabel" style="-fx-text-fill:gray" text="Name: "/>
+                <Text fx:id="tourName" text="This is a test"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourToLabel" style="-fx-text-fill:gray" text="To: "/>
+                <Text fx:id="tourTo" text="This is a test"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourFromLabel" style="-fx-text-fill:gray" text="From: "/>
+                <Text fx:id="tourFrom" text="This is a test"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourDistanceLabel" style="-fx-text-fill:gray" text="Distance: "/>
+                <Text fx:id="tourDistance" text="This is a test"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourTimeLabel" style="-fx-text-fill:gray" text="Estimated Time: "/>
+                <Text fx:id="tourTime" text="This is a test"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="tourDescLabel" style="-fx-text-fill:gray" text="Description: "/>
+                <Text fx:id="tourDesc" text="Description" style="-fx-min-height: 80px" wrappingWidth="400"/>
+            </HBox>
+        </VBox>
 
-        <Label text="Tour Details" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourNameLabel" style="-fx-text-fill:gray" text="Name: "/>
-            <Text fx:id="tourName" text="This is a test"/>
-        </HBox>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourToLabel" style="-fx-text-fill:gray" text="To: "/>
-            <Text fx:id="tourTo" text="This is a test"/>
-        </HBox>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourFromLabel" style="-fx-text-fill:gray" text="From: "/>
-            <Text fx:id="tourFrom" text="This is a test"/>
-        </HBox>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourDistanceLabel" style="-fx-text-fill:gray" text="Distance: "/>
-            <Text fx:id="tourDistance" text="This is a test"/>
-        </HBox>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourTimeLabel" style="-fx-text-fill:gray" text="Estimated Time: "/>
-            <Text fx:id="tourTime" text="This is a test"/>
-        </HBox>
-        <HBox alignment="CENTER_LEFT">
-            <Label fx:id="tourDescLabel" style="-fx-text-fill:gray" text="Description: "/>
-            <Text fx:id="tourDesc" text="Description" style="-fx-min-height: 80px" wrappingWidth="400"/>
-        </HBox>
 
-    </VBox>
+        <HBox  style="-fx-padding:10" spacing="10" alignment="CENTER_RIGHT" >
+            <ImageView fitHeight="400" fitWidth="400">
+                <Image url="@images/placeholder_map.png"/>
+            </ImageView>
+        </HBox>
+    </HBox>
+
+    <StackPane fx:id="logs" visible="false">
+        <fx:include source="logs.fxml"/>
+    </StackPane>
 
 </AnchorPane>

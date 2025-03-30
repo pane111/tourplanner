@@ -2,17 +2,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="Controller.MainViewController"
 >
 
-
   <top>
-  <fx:include source="searchbar.fxml"/>
+    <HBox spacing="5">
+      <fx:include source="searchbar.fxml"/>
+
+
+    </HBox>
+
   </top>
-
-
 
   <left>
     <VBox style="-fx-padding:10">
@@ -27,13 +30,28 @@
 
   </left>
 
-  <bottom>
-
-  </bottom>
 
   <center>
-    <fx:include source="details.fxml"/>
+
+
   </center>
+
+  <right>
+
+    <VBox>
+
+    <HBox>
+      <VBox fx:id="detailsBox"  style="-fx-padding:10" alignment="TOP_CENTER">
+        <HBox spacing="5" alignment="TOP_LEFT">
+          <Button fx:id="detailButton" text="Details" onAction="#displayDetails"/>
+          <Button fx:id="logButton" text="Logs" onAction="#displayLogs"/>
+        </HBox>
+        <fx:include source="details.fxml" visible="true"/>
+      </VBox>
+    </HBox>
+
+    </VBox>
+  </right>
 
 </BorderPane>
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.LogMainController"
+
+            >
+    <HBox minWidth="800" fx:id="mainDetailView" spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
+        <VBox style="-fx-background-color: white">
+            <ListView fx:id="logsList"/>
+        </VBox>
+        <VBox>
+            <Label text="Tour Logs" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logDateLabel" style="-fx-text-fill:gray" text="Date: "/>
+                <Text fx:id="logDate"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logRatingLabel" style="-fx-text-fill:gray" text="Rating: "/>
+                <Text fx:id="logRating"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logCommentLabel" style="-fx-text-fill:gray" text="Comment: "/>
+                <Text fx:id="logComment"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logDistanceLabel" style="-fx-text-fill:gray" text="Distance: "/>
+                <Text fx:id="logDistance"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logTimeLabel" style="-fx-text-fill:gray" text="Time Taken: "/>
+                <Text fx:id="logTime"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Label fx:id="logDifficultyLabel" style="-fx-text-fill:gray" text="Difficulty: "/>
+                <Text fx:id="logDifficulty"/>
+            </HBox>
+        </VBox>
+    </HBox>
+
+
+</AnchorPane>

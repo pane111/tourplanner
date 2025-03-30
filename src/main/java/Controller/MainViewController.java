@@ -9,7 +9,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -19,6 +21,11 @@ import java.util.List;
 
 public class MainViewController {
 
+    @FXML private Button logButton;
+    @FXML private Button detailButton;
+
+
+    private Integer curView=0; //0 = Details, 1 = Logs
 
     public void initialize() {
         ListController listController = Mediator.getInstance().listController;
@@ -74,6 +81,22 @@ public class MainViewController {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void displayDetails(ActionEvent actionEvent) {
+        if (curView!=0)
+        {
+            curView=0;
+            Mediator.getInstance().details.showDetails();
+        }
+    }
+
+    public void displayLogs(ActionEvent actionEvent) {
+        if (curView!=1)
+        {
+            curView=1;
+            Mediator.getInstance().details.showLogs();
         }
     }
 }

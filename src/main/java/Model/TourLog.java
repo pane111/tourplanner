@@ -24,7 +24,7 @@ public class TourLog {
     {
         String rString="☆☆☆☆☆";
         StringBuilder rsb =  new StringBuilder(rString);
-        for (Integer i = 0; i < rating; i++)
+        for (int i = 0; i < rating; i++)
         {
             rsb.setCharAt(i,'★');
         }

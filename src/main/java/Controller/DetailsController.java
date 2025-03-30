@@ -3,6 +3,9 @@ package Controller;
 import Model.Tour;
 import ViewModel.DetailsViewModel;
 import javafx.fxml.FXML;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import lombok.Getter;
 
@@ -22,6 +25,11 @@ public class DetailsController {
     private Text tourTime;
     @FXML
     private Text tourDesc;
+    @FXML
+    private HBox mainDetailView;
+    @FXML
+    private StackPane logs;
+
 
     @Getter
     private DetailsViewModel viewModel;
@@ -41,6 +49,16 @@ public class DetailsController {
     public void setTour(Tour tour)
     {
         viewModel.setCurTour(tour);
+    }
+    public void showLogs()
+    {
+        logs.setVisible(true);
+        mainDetailView.setVisible(false);
+    }
+    public void showDetails()
+    {
+        mainDetailView.setVisible(true);
+        logs.setVisible(false);
     }
 
 }
