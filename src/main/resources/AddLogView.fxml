@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.AddLogController"
+            stylesheets="@style.css"
+            style="-fx-background-image: none; -fx-background-color: white;"
+            minWidth="1000">
+
+    <children>
+        <VBox alignment="CENTER_LEFT" spacing="10" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+            <Label text="Add Tour Log" style="-fx-font-weight:bold; -fx-font-size:20px"/>
+
+            <HBox spacing="40">
+                <!-- Linke Spalte -->
+                <VBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Date:"/>
+                    <TextField fx:id="dateField" promptText="YYYY-MM-DD"/>
+
+                    <Label text="Time Taken:"/>
+                    <TextField fx:id="timeTakenField" promptText="e.g. 2h 30min"/>
+
+                    <Label text="Distance (in km):"/>
+                    <TextField fx:id="distanceField" promptText="e.g. 150.0"/>
+
+                    <Label text="Rating (1-5):"/>
+                    <TextField fx:id="ratingField" promptText="e.g. 4"/>
+
+                    <Label text="Difficulty:"/>
+                    <TextField fx:id="difficultyField" promptText="e.g. Medium"/>
+                </VBox>
+
+                <!-- Rechte Spalte -->
+                <VBox spacing="10" alignment="CENTER_LEFT">
+                    <Label text="Comment:"/>
+                    <TextArea fx:id="commentField" promptText="Optional comment..." prefWidth="400" prefHeight="200"/>
+                </VBox>
+            </HBox>
+
+            <!-- Fehleranzeige + Buttons -->
+            <VBox alignment="BOTTOM_RIGHT" spacing="5">
+                <Label fx:id="errorField" style="-fx-text-fill:red"/>
+                <HBox spacing="10" alignment="BOTTOM_RIGHT">
+                    <Button text="Add Log" onAction="#onAddLog"/>
+                    <Button text="Cancel" onAction="#onCancel"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>
