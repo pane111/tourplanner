@@ -15,6 +15,7 @@ public class Tour {
     private String estimatedTime;
     private String description;
     private String id;
+    //create additional "image" variable later
 
     public Tour(String name, String from, String to, Double distance, String estimatedTime, String description, String id) {
         this.name = name;
