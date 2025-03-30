@@ -36,10 +36,6 @@ public class Mediator {
 
     }
 
-    public void addToList(Tour ntour) {
-        list.addTour(ntour);
-    }
-
 
 
 

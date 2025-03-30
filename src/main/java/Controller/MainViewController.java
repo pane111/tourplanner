@@ -1,9 +1,6 @@
 package Controller;
 
 import Model.Tour;
-import ViewModel.DetailsViewModel;
-import ViewModel.ListViewModel;
-import ViewModel.SearchViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,13 +8,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import javax.print.attribute.standard.Media;
 import java.io.IOException;
-import java.util.List;
 
 public class MainViewController {
 
