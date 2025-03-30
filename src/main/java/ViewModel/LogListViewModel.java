@@ -18,11 +18,11 @@ public class LogListViewModel {
     @Getter @Setter
     private TourLog selectedLog;
 
-    TourLog dummyLog1 = new TourLog("01/01/2001 10:00","This tour was awesome!",
+    TourLog dummyLog1 = new TourLog("01/01/2001","This tour was awesome!",
             "Perfect","100","20 Minutes",5,1);
-    TourLog dummyLog2 = new TourLog("12/12/2024 09:00","This tour was awful!",
+    TourLog dummyLog2 = new TourLog("12/12/2024","This tour was awful!",
             "Way too difficult","100","5 Hours",0,1);
-    TourLog dummyLog3 = new TourLog("06/02/2023 15:30","I enjoyed this tour. Am happy to be out of Berlin!",
+    TourLog dummyLog3 = new TourLog("06/02/2023","I enjoyed this tour. Am happy to be out of Berlin!",
             "Challenging","1000","2 Hours",3,3);
 
     public LogListViewModel(IntegerProperty id) {
@@ -35,6 +35,12 @@ public class LogListViewModel {
             filteredLogs.setPredicate(log ->
                     Objects.equals(log.getTourId(), newVal));
         });
+    }
+    public void add(TourLog log) {
+        logs.add(log);
+    }
+    public void remove(TourLog log) {
+        logs.remove(log);
     }
 
 

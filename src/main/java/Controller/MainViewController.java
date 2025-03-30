@@ -33,7 +33,10 @@ public class MainViewController {
 
         listController.tourListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             detailsController.setTour(newValue);
-            Mediator.getInstance().selectedTourId.setValue(Integer.parseInt(newValue.getId()));
+            if (newValue != null) {
+                Mediator.getInstance().selectedTourId.setValue(Integer.parseInt(newValue.getId()));
+            }
+
         });
 
     }
@@ -94,7 +97,7 @@ public class MainViewController {
     }
 
     public void displayLogs(ActionEvent actionEvent) {
-        if (curView!=1)
+        if (curView!=1 && Mediator.getInstance().listController.getLastSelectedItem()!=null)
         {
             curView=1;
             Mediator.getInstance().details.showLogs();

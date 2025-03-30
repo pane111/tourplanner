@@ -18,9 +18,10 @@ public class LogListController {
 
     public void initialize() {
         Mediator.getInstance().selectedTourId.set(0);
+        Mediator.getInstance().logList=this;
         viewModel = new LogListViewModel(Mediator.getInstance().selectedTourId);
-
         logListView.setItems(viewModel.getFilteredLogs());
+
 
         logListView.setCellFactory(param -> new ListCell<TourLog>() {
             @Override
@@ -36,6 +37,7 @@ public class LogListController {
 
         logListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
+
                 System.out.println(newValue.getDate());
                 Mediator.getInstance().log.setLog(newValue);
             }
@@ -43,7 +45,13 @@ public class LogListController {
 
 
     }
+    public void add(TourLog log) {
+        viewModel.add(log);
+    }
 
+    public void removeLog(TourLog log) {
+        viewModel.remove(log);
+    }
 
     public TourLog getLastSelectedItem() {
         TourLog selectedLog = logListView.getSelectionModel().getSelectedItems().getLast();

@@ -3,6 +3,7 @@ package Controller;
 import Model.TourLog;
 import ViewModel.LogListViewModel;
 import ViewModel.LogMainViewModel;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -53,14 +54,51 @@ public class LogMainController {
     @FXML
     private void onAddLog() {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/AddLogView.fxml"));
-            Parent root = fxmlLoader.load();
 
-            Stage stage = new Stage();
-            stage.setTitle("Add New Log");
-            stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
-            stage.setScene(new Scene(root));
-            stage.show();
+            System.out.println(Mediator.getInstance().selectedTourId);
+            Integer sid = Mediator.getInstance().selectedTourId.get();
+            if (sid!=0) {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/AddLogView.fxml"));
+                Parent root = fxmlLoader.load();
+
+                Stage stage = new Stage();
+                stage.setTitle("Add New Log");
+                stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
+                stage.setScene(new Scene(root));
+                stage.show();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void onDelLog(ActionEvent actionEvent) {
+        try {
+            Mediator.getInstance().logList.removeLog(Mediator.getInstance().logList.getLastSelectedItem());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void onEditLog(ActionEvent actionEvent) {
+        try {
+
+            TourLog l = Mediator.getInstance().logList.getLastSelectedItem();
+            if (l!=null) {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/EditLogView.fxml"));
+                Parent root = fxmlLoader.load();
+
+                Stage stage = new Stage();
+                stage.setTitle("Edit Log");
+                stage.getIcons().add(new Image(getClass().getResourceAsStream("/images/icon.png")));
+                stage.setScene(new Scene(root));
+                Mediator.getInstance().editLog.fillFields();
+                stage.show();
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -13,13 +13,27 @@
 
             >
     <HBox minWidth="800" fx:id="mainDetailView" spacing="2" style="-fx-padding: 4; -fx-border-color: gray; -fx-border-width: 1; -fx-background-color: white; -fx-text-alignment: left " VBox.vgrow="ALWAYS">
+
         <VBox style="-fx-background-color: white">
             <fx:include source="loglist.fxml"/>
-            <Button text="Add Log" onAction="#onAddLog">
-                <VBox.margin>
-                    <Insets top="10"/>
-                </VBox.margin>
-            </Button>
+            <HBox spacing="5">
+                <Button text="Add Log" onAction="#onAddLog">
+                    <VBox.margin>
+                        <Insets top="10"/>
+                    </VBox.margin>
+                </Button>
+                <Button text="Edit Log" onAction="#onEditLog">
+                    <VBox.margin>
+                        <Insets top="10"/>
+                    </VBox.margin>
+                </Button>
+                <Button text="Delete Log" onAction="#onDelLog">
+                    <VBox.margin>
+                        <Insets top="10"/>
+                    </VBox.margin>
+                </Button>
+            </HBox>
+
         </VBox>
         <VBox>
             <Label text="Tour Logs" style="-fx-font-weight: bold; -fx-font-size:16px; -fx-font-fill:black"/>

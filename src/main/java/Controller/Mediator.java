@@ -21,6 +21,8 @@ public class Mediator {
     public ListController listController;
     public DetailsController details;
     public LogMainController log;
+    public LogListController logList;
+    public EditLogController editLog;
 
     private Mediator() {
         selectedTourId.set(0);
