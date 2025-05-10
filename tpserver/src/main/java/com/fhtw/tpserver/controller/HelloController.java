@@ -1,4 +1,4 @@
-package com.fhtw.tpserver;
+package com.fhtw.tpserver.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
