@@ -46,7 +46,6 @@ public class Tour {
         this.from_loc = from_loc;
     }
 
-    // Getter and Setter for to_loc
     public String getTo_loc() {
         return to_loc;
     }
@@ -55,7 +54,6 @@ public class Tour {
         this.to_loc = to_loc;
     }
 
-    // Getter and Setter for distance
     public Double getDistance() {
         return distance;
     }
