@@ -86,8 +86,4 @@ public class Tour {
         this.image = image;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
 }
