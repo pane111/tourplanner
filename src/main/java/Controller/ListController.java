@@ -2,6 +2,7 @@ package Controller;
 
 import Model.TourDto;
 import ViewModel.ListViewModel;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import lombok.Getter;
@@ -26,4 +27,7 @@ public class ListController {
     }
 
 
+    public void onRefresh(ActionEvent actionEvent) {
+        viewModel.refresh();
+    }
 }

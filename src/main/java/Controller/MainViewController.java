@@ -28,7 +28,7 @@ public class MainViewController {
         listController.tourListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             detailsController.setTour(newValue);
             if (newValue != null) {
-                Mediator.getInstance().selectedTourId.setValue(Integer.parseInt(newValue.getId()));
+                Mediator.getInstance().selectedTourId.setValue(newValue.getId());
             }
 
         });

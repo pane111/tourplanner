@@ -1,12 +1,16 @@
 package ViewModel;
 
+import Controller.Mediator;
 import Model.TourDto;
+import bl.TourService;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ListViewModel {
 
@@ -15,26 +19,30 @@ public class ListViewModel {
     private final FilteredList<TourDto> filteredTourDtos;
     @Getter @Setter
     private TourDto selectedTourDto;
+    Logger LOGGER = LogManager.getLogger(ListViewModel.class);
+    private final TourService tourService=new TourService();
 
-
-    TourDto dummyTourDto1 = new TourDto("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","1");
-    TourDto dummyTourDto2 = new TourDto("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","2");
-    TourDto dummyTourDto3 = new TourDto("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "3");
 
     public ListViewModel(StringProperty searchText) {
-        tourDtos.add(dummyTourDto1);
-        tourDtos.add(dummyTourDto2);
-        tourDtos.add(dummyTourDto3);
+        Mediator.getInstance().tourService=tourService;
+        TourDto[] retrievedTours = tourService.fetchTours();
+        tourDtos.addAll(retrievedTours);
         filteredTourDtos = new FilteredList<>(tourDtos, tour -> true);
-
+        LOGGER.info("Current list of tours is " + tourDtos);
         searchText.addListener((observable, oldValue, newValue) -> {
             filteredTourDtos.setPredicate(tour ->
                     newValue==null || newValue.isEmpty() || tour.getName().toLowerCase().contains(newValue.toLowerCase()));
         });
 
     }
+    public void refresh()
+    {
+        tourDtos.clear();
+        TourDto[] retrievedTours = tourService.fetchTours();
+        tourDtos.addAll(retrievedTours);
+    }
     public void addTour(TourDto tourDto) {
-        tourDto.setId(String.valueOf(tourDtos.size()+1));
+
         tourDtos.add(tourDto);
         for (TourDto t : tourDtos) {
             System.out.println(t.toString()+ ", ID: " +t.getId());

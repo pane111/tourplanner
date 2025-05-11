@@ -1,4 +1,4 @@
-# start database (in intelliJ terminal)
+# start database (in intelliJ terminal), docker needs to be running
 
 cd tpserver
 

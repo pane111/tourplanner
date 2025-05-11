@@ -11,9 +11,9 @@ public class TourLog {
     private String distance;
     private String time;
     private Integer rating;
-    private Integer tourId;
+    private Long tourId;
 
-    public TourLog(String date, String comment, String difficulty, String distance, String time, Integer rating, Integer tourId) {
+    public TourLog(String date, String comment, String difficulty, String distance, String time, Integer rating, Long tourId) {
         this.date = date;
         this.comment = comment;
         this.difficulty = difficulty;

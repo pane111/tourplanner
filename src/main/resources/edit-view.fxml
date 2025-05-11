@@ -47,6 +47,10 @@
                 </VBox>
 
             </HBox>
+
+            <HBox alignment="BOTTOM_RIGHT">
+                <Label text="" fx:id="idField"/>
+            </HBox>
             <VBox alignment="BOTTOM_RIGHT">
                 <Label fx:id="errorField" style="-fx-text-fill:red" />
                 <Button text="Save" onAction="#onSave"/>

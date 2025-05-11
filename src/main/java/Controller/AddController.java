@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.Getter;
 
+import javax.print.attribute.standard.Media;
 import java.io.IOException;
 
 public class AddController {
@@ -27,6 +28,7 @@ public class AddController {
 
     public void initialize() {
         viewModel = new AddEditViewModel();
+        Mediator.getInstance().addEdit=viewModel;
         nameField.textProperty().bindBidirectional(viewModel.getName());
         fromField.textProperty().bindBidirectional(viewModel.getFrom());
         toField.textProperty().bindBidirectional(viewModel.getTo());
@@ -41,7 +43,8 @@ public class AddController {
         TourDto t = viewModel.createTour();
         if (t!=null)
         {
-            Mediator.getInstance().list.addTour(t);
+            Mediator.getInstance().tourService.createTour(t);
+            Mediator.getInstance().list.refresh();
             Stage stage = (Stage) toField.getScene().getWindow();
             stage.close();
 

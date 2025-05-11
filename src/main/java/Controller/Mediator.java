@@ -1,10 +1,14 @@
 package Controller;
 
 import Model.TourDto;
+import ViewModel.AddEditViewModel;
 import ViewModel.ListViewModel;
 import ViewModel.SearchViewModel;
+import bl.TourService;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleLongProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,7 +18,7 @@ public class Mediator {
     @Setter @Getter
     private TourDto tourDto;
 
-    public IntegerProperty selectedTourId=new SimpleIntegerProperty();
+    public LongProperty selectedTourId=new SimpleLongProperty();
 
     public SearchViewModel srch;
     public ListViewModel list;
@@ -23,6 +27,9 @@ public class Mediator {
     public LogMainController log;
     public LogListController logList;
     public EditLogController editLog;
+    public AddEditViewModel addEdit;
+
+    public TourService tourService;
 
     private Mediator() {
         selectedTourId.set(0);

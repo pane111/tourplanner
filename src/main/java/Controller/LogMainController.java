@@ -56,7 +56,7 @@ public class LogMainController {
         try {
 
             System.out.println(Mediator.getInstance().selectedTourId);
-            Integer sid = Mediator.getInstance().selectedTourId.get();
+            Long sid = Mediator.getInstance().selectedTourId.get();
             if (sid!=0) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/AddLogView.fxml"));
                 Parent root = fxmlLoader.load();

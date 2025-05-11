@@ -1,10 +1,7 @@
 package ViewModel;
 
 import Model.TourDto;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 import lombok.Getter;
 
 @Getter
@@ -15,7 +12,7 @@ public class DetailsViewModel {
     private final DoubleProperty distance = new SimpleDoubleProperty();
     private final StringProperty estimatedTime = new SimpleStringProperty();
     private final StringProperty description = new SimpleStringProperty();
-    private final StringProperty id = new SimpleStringProperty();
+    private final LongProperty id = new SimpleLongProperty();
 
     public void setCurTour(TourDto tourDto)
     {

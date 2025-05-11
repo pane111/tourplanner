@@ -21,6 +21,7 @@ public class EditController {
     public TextArea descriptionField;
     public Label errorField;
     public TextField nameField;
+    public Label idField;
 
     @Getter
     private AddEditViewModel viewModel;
@@ -34,6 +35,7 @@ public class EditController {
         distField.textProperty().bindBidirectional(viewModel.getDistance());
         descriptionField.textProperty().bindBidirectional(viewModel.getDescription());
         durationField.textProperty().bindBidirectional(viewModel.getEstimatedTime());
+        idField.textProperty().bindBidirectional(viewModel.getId());
 
 
     }
@@ -45,6 +47,7 @@ public class EditController {
         distField.setText(tourDto.getDistance().toString());
         durationField.setText(tourDto.getEstimatedTime());
         descriptionField.setText(tourDto.getDescription());
+        idField.setText(tourDto.getId().toString());
     }
 
     @FXML
@@ -53,8 +56,8 @@ public class EditController {
         TourDto t = viewModel.createTour();
         if (t!=null)
         {
-            Mediator.getInstance().list.removeTour(Mediator.getInstance().listController.getLastSelectedItem());
-            Mediator.getInstance().list.addTour(t);
+            Mediator.getInstance().tourService.updateTour(t);
+            Mediator.getInstance().list.refresh();
             Stage stage = (Stage) toField.getScene().getWindow();
             stage.close();
 
