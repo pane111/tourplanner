@@ -46,6 +46,16 @@ public class TourService {
         }
         return null;
     }
+    public void deleteTour(TourDto tour) {
+        try {
+            String url = API_URL + "/" + tour.getId();
+            restTemplate.delete(url);
+
+        }
+        catch (Exception e) {
+            logger.error(e);
+        }
+    }
 
 
 
