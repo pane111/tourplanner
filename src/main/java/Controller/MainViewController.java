@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -60,8 +60,8 @@ public class MainViewController {
 
     public void onEdit(ActionEvent actionEvent) {
         try {
-            Tour selectedTour = Mediator.getInstance().listController.getLastSelectedItem();
-            if (selectedTour != null) {
+            TourDto selectedTourDto = Mediator.getInstance().listController.getLastSelectedItem();
+            if (selectedTourDto != null) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/edit-view.fxml"));
                 Parent root = fxmlLoader.load();
 
@@ -72,7 +72,7 @@ public class MainViewController {
                 scene.getStylesheets().add(getClass().getResource("/modalStyle.css").toExternalForm());
                 stage.setScene(scene);
                 stage.initModality(Modality.APPLICATION_MODAL);
-                Mediator.getInstance().edit.fillFields(selectedTour);
+                Mediator.getInstance().edit.fillFields(selectedTourDto);
                 stage.show();
             }
 

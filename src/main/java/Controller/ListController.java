@@ -1,18 +1,14 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import ViewModel.ListViewModel;
 import javafx.fxml.FXML;
-import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import lombok.Getter;
-import lombok.Setter;
-
-import javax.print.attribute.standard.Media;
 
 public class ListController {
     @FXML
-    public ListView<Tour> tourListView;
+    public ListView<TourDto> tourListView;
     @Getter
     private ListViewModel viewModel;
 
@@ -20,13 +16,13 @@ public class ListController {
         viewModel=new ListViewModel(Mediator.getInstance().srch.getSearchText());
         Mediator.getInstance().list = viewModel;
         Mediator.getInstance().listController = this;
-        tourListView.setItems(viewModel.getFilteredTours());
+        tourListView.setItems(viewModel.getFilteredTourDtos());
 
 
     }
-    public Tour getLastSelectedItem() {
-        Tour selectedTour = tourListView.getSelectionModel().getSelectedItems().getLast();
-        return selectedTour;
+    public TourDto getLastSelectedItem() {
+        TourDto selectedTourDto = tourListView.getSelectionModel().getSelectedItems().getLast();
+        return selectedTourDto;
     }
 
 

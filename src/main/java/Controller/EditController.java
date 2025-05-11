@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import ViewModel.AddEditViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -37,20 +37,20 @@ public class EditController {
 
 
     }
-    public void fillFields(Tour tour) {
-        nameField.setText(tour.getName());
-        fromField.setText(tour.getFrom());
-        toField.setText(tour.getTo());
-        descriptionField.setText(tour.getDescription());
-        distField.setText(tour.getDistance().toString());
-        durationField.setText(tour.getEstimatedTime());
-        descriptionField.setText(tour.getDescription());
+    public void fillFields(TourDto tourDto) {
+        nameField.setText(tourDto.getName());
+        fromField.setText(tourDto.getFrom());
+        toField.setText(tourDto.getTo());
+        descriptionField.setText(tourDto.getDescription());
+        distField.setText(tourDto.getDistance().toString());
+        durationField.setText(tourDto.getEstimatedTime());
+        descriptionField.setText(tourDto.getDescription());
     }
 
     @FXML
     private void onSave() throws IOException {
 
-        Tour t = viewModel.createTour();
+        TourDto t = viewModel.createTour();
         if (t!=null)
         {
             Mediator.getInstance().list.removeTour(Mediator.getInstance().listController.getLastSelectedItem());

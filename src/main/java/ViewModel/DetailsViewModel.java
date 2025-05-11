@@ -1,6 +1,6 @@
 package ViewModel;
 
-import Model.Tour;
+import Model.TourDto;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -17,17 +17,17 @@ public class DetailsViewModel {
     private final StringProperty description = new SimpleStringProperty();
     private final StringProperty id = new SimpleStringProperty();
 
-    public void setCurTour(Tour tour)
+    public void setCurTour(TourDto tourDto)
     {
-        if (tour!=null)
+        if (tourDto !=null)
         {
-            name.set(tour.getName());
-            from.set(tour.getFrom());
-            to.set(tour.getTo());
-            distance.set(tour.getDistance());
-            estimatedTime.set(tour.getEstimatedTime());
-            description.set(tour.getDescription());
-            id.set(tour.getId());
+            name.set(tourDto.getName());
+            from.set(tourDto.getFrom());
+            to.set(tourDto.getTo());
+            distance.set(tourDto.getDistance());
+            estimatedTime.set(tourDto.getEstimatedTime());
+            description.set(tourDto.getDescription());
+            id.set(tourDto.getId());
 
         }
     }

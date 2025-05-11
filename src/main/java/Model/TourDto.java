@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class Tour {
+public class TourDto {
 
 
     private String name;
@@ -17,7 +17,7 @@ public class Tour {
     private String id;
     //create additional "image" variable later
 
-    public Tour(String name, String from, String to, Double distance, String estimatedTime, String description, String id) {
+    public TourDto(String name, String from, String to, Double distance, String estimatedTime, String description, String id) {
         this.name = name;
         this.from = from;
         this.to = to;

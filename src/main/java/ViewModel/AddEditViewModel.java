@@ -1,6 +1,6 @@
 package ViewModel;
 
-import Model.Tour;
+import Model.TourDto;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import lombok.Getter;
@@ -16,7 +16,7 @@ public class AddEditViewModel {
     private final StringProperty description = new SimpleStringProperty();
     private final StringProperty id = new SimpleStringProperty();
 
-    public Tour createTour()
+    public TourDto createTour()
     {
         if (name.isEmpty().getValue() || from.isEmpty().getValue() || to.isEmpty().getValue()
         || estimatedTime.isEmpty().getValue() || description.isEmpty().getValue())
@@ -33,7 +33,7 @@ public class AddEditViewModel {
             System.out.println("Invalid Distance");
             return null;
         }
-        return new Tour(name.getValue(),from.getValue(),to.getValue(),Double.parseDouble(distance.getValue()),estimatedTime.getValue(),
+        return new TourDto(name.getValue(),from.getValue(),to.getValue(),Double.parseDouble(distance.getValue()),estimatedTime.getValue(),
                 description.getValue(),id.getValue());
 
     }

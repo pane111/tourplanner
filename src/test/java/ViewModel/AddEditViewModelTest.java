@@ -1,6 +1,6 @@
 package ViewModel;
 
-import Model.Tour;
+import Model.TourDto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,16 +25,16 @@ class AddEditViewModelTest {
         viewModel.getDescription().set("Eine schöne Route.");
         viewModel.getId().set("T001");
 
-        Tour tour = viewModel.createTour();
+        TourDto tourDto = viewModel.createTour();
 
-        assertNotNull(tour);
-        assertEquals("Testtour", tour.getName());
-        assertEquals("Wien", tour.getFrom());
-        assertEquals("Salzburg", tour.getTo());
-        assertEquals(300.0, tour.getDistance());
-        assertEquals("5h", tour.getEstimatedTime());
-        assertEquals("Eine schöne Route.", tour.getDescription());
-        assertEquals("T001", tour.getId());
+        assertNotNull(tourDto);
+        assertEquals("Testtour", tourDto.getName());
+        assertEquals("Wien", tourDto.getFrom());
+        assertEquals("Salzburg", tourDto.getTo());
+        assertEquals(300.0, tourDto.getDistance());
+        assertEquals("5h", tourDto.getEstimatedTime());
+        assertEquals("Eine schöne Route.", tourDto.getDescription());
+        assertEquals("T001", tourDto.getId());
     }
 
     @Test
@@ -47,9 +47,9 @@ class AddEditViewModelTest {
         viewModel.getDescription().set("Beschreibung");
         viewModel.getId().set("T002");
 
-        Tour tour = viewModel.createTour();
+        TourDto tourDto = viewModel.createTour();
 
-        assertNull(tour); // sollte fehlschlagen
+        assertNull(tourDto); // sollte fehlschlagen
     }
 
     @Test
@@ -62,8 +62,8 @@ class AddEditViewModelTest {
         viewModel.getDescription().set("Irgendwas");
         viewModel.getId().set("T003");
 
-        Tour tour = viewModel.createTour();
+        TourDto tourDto = viewModel.createTour();
 
-        assertNull(tour); // Fehler wegen ungültiger Zahl
+        assertNull(tourDto); // Fehler wegen ungültiger Zahl
     }
 }

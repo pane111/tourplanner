@@ -1,15 +1,12 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import ViewModel.DetailsViewModel;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import lombok.Getter;
-
-import javax.print.attribute.standard.Media;
 
 public class DetailsController {
 
@@ -46,9 +43,9 @@ public class DetailsController {
         Mediator.getInstance().details = this;
     }
 
-    public void setTour(Tour tour)
+    public void setTour(TourDto tourDto)
     {
-        viewModel.setCurTour(tour);
+        viewModel.setCurTour(tourDto);
     }
     public void showLogs()
     {

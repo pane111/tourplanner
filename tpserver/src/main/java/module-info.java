@@ -1,13 +1,17 @@
-module com.fhtw.tpserver {
-    requires javafx.controls;
-    requires javafx.fxml;
+open module com.fhtw.tpserver {
     requires spring.boot;
     requires spring.boot.autoconfigure;
     requires spring.web;
+    requires jakarta.persistence;
+    requires static lombok;
+    requires spring.data.jpa;
+    requires spring.data.commons;
+    requires org.hibernate.orm.core;
+    requires spring.context;
+    requires com.fasterxml.jackson.annotation;
+    requires jakarta.annotation;
 
-
-    opens com.fhtw.tpserver to javafx.fxml;
     exports com.fhtw.tpserver;
-    exports com.fhtw.tpserver.controller;
-    opens com.fhtw.tpserver.controller to javafx.fxml;
+    exports com.fhtw.tpserver.rest;
+    exports com.fhtw.tpserver.model;
 }

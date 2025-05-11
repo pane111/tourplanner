@@ -1,7 +1,6 @@
 package ViewModel;
 
-import Model.Tour;
-import javafx.beans.property.SimpleStringProperty;
+import Model.TourDto;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,38 +10,38 @@ import lombok.Setter;
 
 public class ListViewModel {
 
-    private final ObservableList<Tour> tours = FXCollections.observableArrayList();
+    private final ObservableList<TourDto> tourDtos = FXCollections.observableArrayList();
     @Getter
-    private final FilteredList<Tour> filteredTours;
+    private final FilteredList<TourDto> filteredTourDtos;
     @Getter @Setter
-    private Tour selectedTour;
+    private TourDto selectedTourDto;
 
 
-    Tour dummyTour1 = new Tour("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","1");
-    Tour dummyTour2 = new Tour("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","2");
-    Tour dummyTour3 = new Tour("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "3");
+    TourDto dummyTourDto1 = new TourDto("Technikum Route", "Taborstraße, Vienna", "FH Technikum Wien", 1.0, "20 Minutes","Take the tram 2 from Taborstraße to FH Technikum Wien. Try not to be late!","1");
+    TourDto dummyTourDto2 = new TourDto("Across Austria", "Vienna", "Innsbruck", 150.0, "6 hours", "Travel from Vienna through all of Austria!","2");
+    TourDto dummyTourDto3 = new TourDto("Get Out Of Berlin", "Berlin", "Vienna", 300.0, "8 hours", "Leave Berlin Quickly", "3");
 
     public ListViewModel(StringProperty searchText) {
-        tours.add(dummyTour1);
-        tours.add(dummyTour2);
-        tours.add(dummyTour3);
-        filteredTours = new FilteredList<>(tours, tour -> true);
+        tourDtos.add(dummyTourDto1);
+        tourDtos.add(dummyTourDto2);
+        tourDtos.add(dummyTourDto3);
+        filteredTourDtos = new FilteredList<>(tourDtos, tour -> true);
 
         searchText.addListener((observable, oldValue, newValue) -> {
-            filteredTours.setPredicate(tour ->
+            filteredTourDtos.setPredicate(tour ->
                     newValue==null || newValue.isEmpty() || tour.getName().toLowerCase().contains(newValue.toLowerCase()));
         });
 
     }
-    public void addTour(Tour tour) {
-        tour.setId(String.valueOf(tours.size()+1));
-        tours.add(tour);
-        for (Tour t : tours) {
+    public void addTour(TourDto tourDto) {
+        tourDto.setId(String.valueOf(tourDtos.size()+1));
+        tourDtos.add(tourDto);
+        for (TourDto t : tourDtos) {
             System.out.println(t.toString()+ ", ID: " +t.getId());
         }
     }
-    public void removeTour(Tour tour) {
-        tours.remove(tour);
+    public void removeTour(TourDto tourDto) {
+        tourDtos.remove(tourDto);
     }
 
 

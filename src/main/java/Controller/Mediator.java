@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import ViewModel.ListViewModel;
 import ViewModel.SearchViewModel;
 import javafx.beans.property.IntegerProperty;
@@ -12,7 +12,7 @@ public class Mediator {
 
     public EditController edit;
     @Setter @Getter
-    private Tour tour;
+    private TourDto tourDto;
 
     public IntegerProperty selectedTourId=new SimpleIntegerProperty();
 

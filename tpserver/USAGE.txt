@@ -1,0 +1,18 @@
+# start database (in intelliJ terminal)
+
+cd tpserver
+
+docker-compose up -d
+
+# stop database
+
+docker-compose down -v 
+
+# restart to reset database
+
+
+
+# after server and database are launched:
+
+https://.postman.co/workspace/My-Workspace~e4e4f23c-c97d-488c-8b3e-d9449897daa5/collection/10074138-d88bfcef-0e29-40f5-b0db-fa49cdbf941b?action=share&creator=10074138
+

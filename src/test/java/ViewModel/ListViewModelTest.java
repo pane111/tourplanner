@@ -1,6 +1,6 @@
 package ViewModel;
 
-import Model.Tour;
+import Model.TourDto;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,25 +21,25 @@ class ListViewModelTest {
 
     @Test
     void testInitialDummyData() {
-        assertEquals(3, viewModel.getFilteredTours().size(), "Es sollten 3 Dummy-Touren vorhanden sein.");
+        assertEquals(3, viewModel.getFilteredTourDtos().size(), "Es sollten 3 Dummy-Touren vorhanden sein.");
     }
 
     @Test
     void testAddTour() {
-        Tour newTour = new Tour("New Trip", "A", "B", 10.0, "1h", "desc", null);
-        viewModel.addTour(newTour);
+        TourDto newTourDto = new TourDto("New Trip", "A", "B", 10.0, "1h", "desc", null);
+        viewModel.addTour(newTourDto);
 
-        assertEquals(4, viewModel.getFilteredTours().size());
-        assertEquals("3", newTour.getId()); // ID sollte der Index sein
+        assertEquals(4, viewModel.getFilteredTourDtos().size());
+        assertEquals("3", newTourDto.getId()); // ID sollte der Index sein
     }
 
     @Test
     void testRemoveTour() {
-        Tour toRemove = viewModel.getFilteredTours().get(0);
+        TourDto toRemove = viewModel.getFilteredTourDtos().get(0);
         viewModel.removeTour(toRemove);
 
-        assertEquals(2, viewModel.getFilteredTours().size());
-        assertFalse(viewModel.getFilteredTours().contains(toRemove));
+        assertEquals(2, viewModel.getFilteredTourDtos().size());
+        assertFalse(viewModel.getFilteredTourDtos().contains(toRemove));
     }
 
     @Test
@@ -47,10 +47,10 @@ class ListViewModelTest {
         searchText.set("berlin");
 
         searchText.set("Get Out Of Berlin");
-        assertEquals(1, viewModel.getFilteredTours().size());
+        assertEquals(1, viewModel.getFilteredTourDtos().size());
 
         searchText.set("sdkjfbsdifhguiz");
-        assertEquals(0, viewModel.getFilteredTours().size());
+        assertEquals(0, viewModel.getFilteredTourDtos().size());
 
     }
 
@@ -58,6 +58,6 @@ class ListViewModelTest {
     void testSearchNoMatch() {
         searchText.set("xyz");
 
-        assertEquals(0, viewModel.getFilteredTours().size());
+        assertEquals(0, viewModel.getFilteredTourDtos().size());
     }
 }

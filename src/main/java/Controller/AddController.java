@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Tour;
+import Model.TourDto;
 import ViewModel.AddEditViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,7 +38,7 @@ public class AddController {
     @FXML
     private void onAdd() throws IOException {
 
-        Tour t = viewModel.createTour();
+        TourDto t = viewModel.createTour();
         if (t!=null)
         {
             Mediator.getInstance().list.addTour(t);
