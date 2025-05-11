@@ -5,11 +5,15 @@ import com.fhtw.tpserver.repo.TourRepo;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.util.Optional;
 
 @RestController
 public class TourController {
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private final TourRepo tourRepository;
 
@@ -19,18 +23,21 @@ public class TourController {
 
     @GetMapping("/tours/{id}")
     public ResponseEntity<Tour> getTour(@PathVariable Long id) {
+        LOGGER.info("Get tour with id {}", id);
         Optional<Tour> tour = tourRepository.findById(id);
         return ResponseEntity.of(tour);
     }
 
     @GetMapping("/tours")
     public ResponseEntity<Iterable<Tour>> getAllTours() {
+        LOGGER.info("Get all tours");
         Iterable<Tour> tours = tourRepository.findAll();
         return ResponseEntity.ok(tours);
     }
 
     @PostMapping("/tours")
     public ResponseEntity<Tour> createTour(@RequestBody Tour tour) {
+        LOGGER.info("Create tour {}", tour.getName());
         Tour savedTour = tourRepository.save(tour);
         return new ResponseEntity<>(savedTour, HttpStatus.CREATED);
     }
@@ -39,6 +46,7 @@ public class TourController {
     //Not working
     @PutMapping("/tours/{id}")
     public ResponseEntity<Tour> updateTour(@PathVariable Long id, @RequestBody Tour updatedTour) {
+        LOGGER.info("Update tour with id {}", id);
         return tourRepository.findById(id)
                 .map(existingTour -> {
                     existingTour.setName(updatedTour.getName());
@@ -57,14 +65,16 @@ public class TourController {
     @DeleteMapping("/tours/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity deleteTour(@PathVariable Long id) {
-
+        LOGGER.info("Deleting tour with id {}", id);
         Tour tour = tourRepository.findById(id).orElse(null);
         if (tour != null) {
             tourRepository.deleteById(id);
+            LOGGER.info("Deleted tour with id {}", id);
             return new ResponseEntity(HttpStatus.OK);
         }
         else
         {
+            LOGGER.warn("Tour with id {} not found", id);
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 

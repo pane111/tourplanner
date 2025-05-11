@@ -10,6 +10,7 @@ open module com.fhtw.tpserver {
     requires spring.context;
     requires com.fasterxml.jackson.annotation;
     requires jakarta.annotation;
+    requires org.apache.logging.log4j;
 
     exports com.fhtw.tpserver;
     exports com.fhtw.tpserver.rest;
