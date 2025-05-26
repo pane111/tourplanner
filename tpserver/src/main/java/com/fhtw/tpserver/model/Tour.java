@@ -30,6 +30,7 @@ public class Tour {
 
 
     //NOT A FINAL SOLUTION, PROGRAM REFUSES TO RECOGNIZE LOMBOK GETTERS/SETTERS
+    /*
     public String getName() {
         return name;
     }
@@ -85,5 +86,7 @@ public class Tour {
     public void setImage(String image) {
         this.image = image;
     }
+    */
+
 
 }
