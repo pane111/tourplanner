@@ -1,7 +1,6 @@
 package Controller;
 
-import Model.TourLog;
-import ViewModel.LogListViewModel;
+import Model.TourLogDto;
 import ViewModel.LogMainViewModel;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +11,6 @@ import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import javax.print.attribute.standard.Media;
 import java.io.IOException;
 
 public class LogMainController {
@@ -46,7 +44,7 @@ public class LogMainController {
 
 
     }
-    public void setLog(TourLog log)
+    public void setLog(TourLogDto log)
     {
         viewModel.setCurLog(log);
     }
@@ -86,7 +84,7 @@ public class LogMainController {
     public void onEditLog(ActionEvent actionEvent) {
         try {
 
-            TourLog l = Mediator.getInstance().logList.getLastSelectedItem();
+            TourLogDto l = Mediator.getInstance().logList.getLastSelectedItem();
             if (l!=null) {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/EditLogView.fxml"));
                 Parent root = fxmlLoader.load();

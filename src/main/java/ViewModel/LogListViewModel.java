@@ -1,7 +1,6 @@
 package ViewModel;
 
-import Model.TourLog;
-import javafx.beans.property.IntegerProperty;
+import Model.TourLogDto;
 import javafx.beans.property.LongProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,17 +12,17 @@ import java.util.Objects;
 
 public class LogListViewModel {
 
-    private final ObservableList<TourLog> logs = FXCollections.observableArrayList();
+    private final ObservableList<TourLogDto> logs = FXCollections.observableArrayList();
     @Getter
-    private final FilteredList<TourLog> filteredLogs;
+    private final FilteredList<TourLogDto> filteredLogs;
     @Getter @Setter
-    private TourLog selectedLog;
+    private TourLogDto selectedLog;
 
-    TourLog dummyLog1 = new TourLog("01/01/2001","This tour was awesome!",
+    TourLogDto dummyLog1 = new TourLogDto("01/01/2001","This tour was awesome!",
             "Perfect","100","20 Minutes",5,1L);
-    TourLog dummyLog2 = new TourLog("12/12/2024","This tour was awful!",
+    TourLogDto dummyLog2 = new TourLogDto("12/12/2024","This tour was awful!",
             "Way too difficult","100","5 Hours",0,1L);
-    TourLog dummyLog3 = new TourLog("06/02/2023","I enjoyed this tour. Am happy to be out of Berlin!",
+    TourLogDto dummyLog3 = new TourLogDto("06/02/2023","I enjoyed this tour. Am happy to be out of Berlin!",
             "Challenging","1000","2 Hours",3,3L);
 
     public LogListViewModel(LongProperty id) {
@@ -37,10 +36,10 @@ public class LogListViewModel {
                     Objects.equals(log.getTourId(), newVal));
         });
     }
-    public void add(TourLog log) {
+    public void add(TourLogDto log) {
         logs.add(log);
     }
-    public void remove(TourLog log) {
+    public void remove(TourLogDto log) {
         logs.remove(log);
     }
 

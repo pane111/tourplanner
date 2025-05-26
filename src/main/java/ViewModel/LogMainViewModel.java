@@ -1,6 +1,6 @@
 package ViewModel;
 
-import Model.TourLog;
+import Model.TourLogDto;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import lombok.Getter;
@@ -14,7 +14,7 @@ public class LogMainViewModel {
     private final StringProperty time = new SimpleStringProperty();
     private final StringProperty rating = new SimpleStringProperty();
 
-    public void setCurLog(TourLog log)
+    public void setCurLog(TourLogDto log)
     {
         System.out.println(log.getComment());
         if (log!=null)

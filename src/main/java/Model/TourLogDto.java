@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class TourLog {
+public class TourLogDto {
     private String date;
     private String comment;
     private String difficulty;
@@ -12,8 +12,9 @@ public class TourLog {
     private String time;
     private Integer rating;
     private Long tourId;
+    private Long logId;
 
-    public TourLog(String date, String comment, String difficulty, String distance, String time, Integer rating, Long tourId) {
+    public TourLogDto(String date, String comment, String difficulty, String distance, String time, Integer rating, Long tourId) {
         this.date = date;
         this.comment = comment;
         this.difficulty = difficulty;

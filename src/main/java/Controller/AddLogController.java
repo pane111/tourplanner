@@ -1,12 +1,10 @@
 package Controller;
 
-import Model.TourLog;
+import Model.TourLogDto;
 import ViewModel.AddEditLogViewModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
-import java.util.regex.Pattern;
 
 public class AddLogController {
 
@@ -35,7 +33,7 @@ public class AddLogController {
     @FXML
     private void onAddLog() {
         System.out.println("Add Log clicked");
-        TourLog t = viewModel.createLog();
+        TourLogDto t = viewModel.createLog();
         if (t != null) {
             Mediator.getInstance().logList.add(t);
             Stage stage = (Stage) dateField.getScene().getWindow();

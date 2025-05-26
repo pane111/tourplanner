@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.TourLog;
+import Model.TourLogDto;
 import ViewModel.LogListViewModel;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
@@ -8,7 +8,7 @@ import lombok.Getter;
 
 public class LogListController {
 
-    public ListView<TourLog> logListView;
+    public ListView<TourLogDto> logListView;
     @Getter
     public LogListViewModel viewModel;
 
@@ -20,9 +20,9 @@ public class LogListController {
         logListView.setItems(viewModel.getFilteredLogs());
 
 
-        logListView.setCellFactory(param -> new ListCell<TourLog>() {
+        logListView.setCellFactory(param -> new ListCell<TourLogDto>() {
             @Override
-            protected void updateItem(TourLog item, boolean empty) {
+            protected void updateItem(TourLogDto item, boolean empty) {
                 super.updateItem(item, empty);
                 if (empty || item == null) {
                     setText(null);
@@ -42,16 +42,16 @@ public class LogListController {
 
 
     }
-    public void add(TourLog log) {
+    public void add(TourLogDto log) {
         viewModel.add(log);
     }
 
-    public void removeLog(TourLog log) {
+    public void removeLog(TourLogDto log) {
         viewModel.remove(log);
     }
 
-    public TourLog getLastSelectedItem() {
-        TourLog selectedLog = logListView.getSelectionModel().getSelectedItems().getLast();
+    public TourLogDto getLastSelectedItem() {
+        TourLogDto selectedLog = logListView.getSelectionModel().getSelectedItems().getLast();
         return selectedLog;
 
     }

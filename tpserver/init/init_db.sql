@@ -11,6 +11,32 @@ CREATE TABLE IF NOT EXISTS tp_schema.tours (
                                  image TEXT
 );
 
+CREATE TABLE IF NOT EXISTS tp_schema.logs (
+                                               id BIGSERIAL PRIMARY KEY,
+                                               date TEXT,
+                                               comment TEXT,
+                                               difficulty TEXT,
+                                               distance TEXT,
+                                               time TEXT,
+                                               rating INT,
+                                               tour_id BIGSERIAL
+);
+
+INSERT INTO tp_schema.logs
+(date, comment, difficulty, distance, time, rating, tour_id)
+VALUES
+('01/05/2025', 'Hello', 'Easy', '5km', '01:30:00', 4, 1);
+INSERT INTO tp_schema.logs
+(date, comment, difficulty, distance, time, rating, tour_id)
+VALUES
+('01/05/2025', 'Another log for the same tour', 'Medium', '0km', '01:30:00', 2, 1);
+INSERT INTO tp_schema.logs
+(date, comment, difficulty, distance, time, rating, tour_id)
+VALUES
+('01/05/2025', 'TEST', 'Hard', '0km', '01:30:00', 5, 2);
+
+
+
 INSERT INTO tp_schema.tours
 (name, from_loc, to_loc, distance, estimated_time, description, image)
 VALUES

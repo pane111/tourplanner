@@ -1,14 +1,12 @@
 package Controller;
 
-import Model.TourLog;
+import Model.TourLogDto;
 import ViewModel.AddEditLogViewModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import java.util.regex.Pattern;
 
 public class EditLogController {
     @FXML
@@ -35,7 +33,7 @@ public class EditLogController {
 
     public void fillFields()
     {
-        TourLog log = Mediator.getInstance().logList.getLastSelectedItem();
+        TourLogDto log = Mediator.getInstance().logList.getLastSelectedItem();
         dateField.setText(log.getDate());
         timeTakenField.setText(log.getTime());
         distanceField.setText(log.getDistance());
@@ -48,7 +46,7 @@ public class EditLogController {
     @FXML
     private void onSaveLog() {
         System.out.println("Save Log clicked");
-        TourLog t = viewModel.createLog();
+        TourLogDto t = viewModel.createLog();
         if (t != null) {
             Mediator.getInstance().logList.removeLog(Mediator.getInstance().logList.getLastSelectedItem());
             Mediator.getInstance().logList.add(t);
