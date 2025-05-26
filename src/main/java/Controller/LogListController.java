@@ -50,6 +50,10 @@ public class LogListController {
         viewModel.remove(log);
     }
 
+    public void updateLog(TourLogDto log) {
+        viewModel.update(log);
+    }
+
     public TourLogDto getLastSelectedItem() {
         TourLogDto selectedLog = logListView.getSelectionModel().getSelectedItems().getLast();
         return selectedLog;

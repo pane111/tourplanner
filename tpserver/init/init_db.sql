@@ -25,11 +25,11 @@ CREATE TABLE IF NOT EXISTS tp_schema.logs (
 INSERT INTO tp_schema.logs
 (date, comment, difficulty, distance, time, rating, tour_id)
 VALUES
-('01/05/2025', 'Hello', 'Easy', '5km', '01:30:00', 4, 1);
+('21/01/2022', 'Hello', 'Easy', '5km', '01:30:00', 4, 1);
 INSERT INTO tp_schema.logs
 (date, comment, difficulty, distance, time, rating, tour_id)
 VALUES
-('01/05/2025', 'Another log for the same tour', 'Medium', '0km', '01:30:00', 2, 1);
+('18/02/2023', 'Another log for the same tour', 'Medium', '0km', '01:30:00', 2, 1);
 INSERT INTO tp_schema.logs
 (date, comment, difficulty, distance, time, rating, tour_id)
 VALUES

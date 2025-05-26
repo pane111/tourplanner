@@ -15,9 +15,11 @@ public class TourService {
     private final RestTemplate restTemplate = new RestTemplate();
     private final String API_URL = "http://localhost:8080/tours";
     Logger logger = LogManager.getLogger(TourService.class);
+
     public TourDto[] fetchTours() {
         try {
             ResponseEntity<TourDto[]> response = restTemplate.getForEntity(API_URL, TourDto[].class);
+            logger.info(response.getBody());
             return response.getBody();
         }
         catch (Exception e) {
@@ -25,6 +27,7 @@ public class TourService {
         }
         return new TourDto[0];
     }
+
     public TourDto createTour(TourDto tour) {
         try {
             tour.setId(null);

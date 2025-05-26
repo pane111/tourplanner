@@ -4,6 +4,7 @@ import Model.TourDto;
 import ViewModel.AddEditViewModel;
 import ViewModel.ListViewModel;
 import ViewModel.SearchViewModel;
+import bl.LogService;
 import bl.TourService;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.LongProperty;
@@ -28,6 +29,7 @@ public class Mediator {
     public LogListController logList;
     public EditLogController editLog;
     public AddEditViewModel addEdit;
+    public LogService logService;
 
     public TourService tourService;
 

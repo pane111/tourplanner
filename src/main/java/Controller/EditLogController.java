@@ -17,6 +17,7 @@ public class EditLogController {
     @FXML private TextField difficultyField;
     @FXML private TextArea commentField;
     @FXML private Label errorField;
+    @FXML private Label idField;
 
     private AddEditLogViewModel viewModel;
 
@@ -29,6 +30,7 @@ public class EditLogController {
         difficultyField.textProperty().bindBidirectional(viewModel.getDifficulty());
         commentField.textProperty().bindBidirectional(viewModel.getComment());
         dateField.textProperty().bindBidirectional(viewModel.getDate());
+        idField.textProperty().bindBidirectional(viewModel.getId());
     }
 
     public void fillFields()
@@ -40,6 +42,7 @@ public class EditLogController {
         ratingField.setText(log.getRating().toString());
         difficultyField.setText(log.getDifficulty().toString());
         commentField.setText(log.getComment());
+        idField.setText(String.valueOf(log.getLogId()));
 
     }
 
@@ -48,8 +51,7 @@ public class EditLogController {
         System.out.println("Save Log clicked");
         TourLogDto t = viewModel.createLog();
         if (t != null) {
-            Mediator.getInstance().logList.removeLog(Mediator.getInstance().logList.getLastSelectedItem());
-            Mediator.getInstance().logList.add(t);
+            Mediator.getInstance().logList.updateLog(t);
 
 
             Stage stage = (Stage) dateField.getScene().getWindow();

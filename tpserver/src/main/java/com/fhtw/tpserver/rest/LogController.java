@@ -39,7 +39,7 @@ public class LogController {
 
     @GetMapping("/logs")
     public ResponseEntity<Iterable<TourLog>> getAllLogs() {
-        LOGGER.info("Get all tours");
+        LOGGER.info("Get all logs");
         Iterable<TourLog> logs = logRepository.findAll();
         return ResponseEntity.ok(logs);
     }
