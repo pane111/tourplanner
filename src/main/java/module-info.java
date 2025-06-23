@@ -7,6 +7,7 @@ module org.example.tourplanner {
     requires spring.web;
     requires com.fasterxml.jackson.annotation;
     requires org.apache.logging.log4j;
+    requires jakarta.annotation;
 
 
     opens app to javafx.fxml;

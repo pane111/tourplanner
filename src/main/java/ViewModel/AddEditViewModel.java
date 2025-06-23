@@ -40,7 +40,7 @@ public class AddEditViewModel {
         }
         LOGGER.info("Creating Tour with id: " + id.getValue());
         return new TourDto(name.getValue(),from.getValue(),to.getValue(),Double.parseDouble(distance.getValue()),estimatedTime.getValue(),
-                description.getValue(),Long.parseLong(id.getValue()));
+                description.getValue(),null);
 
     }
 }

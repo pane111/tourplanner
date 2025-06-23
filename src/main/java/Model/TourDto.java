@@ -2,6 +2,7 @@ package Model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.annotation.Nullable;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,14 +25,16 @@ public class TourDto {
     private Long id;
     //create additional "image" variable later
 
-    public TourDto(String name, String from, String to, Double distance, String estimatedTime, String description, Long id) {
+    public TourDto(String name, String from, String to, Double distance, String estimatedTime, String description, @Nullable Long id) {
         this.name = name;
         this.from = from;
         this.to = to;
         this.distance = distance;
         this.estimatedTime = estimatedTime;
         this.description = description;
-        this.id = id;
+        if (id != null) {
+            this.id = id;
+        }
     }
 
     @Override

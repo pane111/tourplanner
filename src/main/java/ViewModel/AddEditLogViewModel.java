@@ -7,6 +7,8 @@ import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import lombok.Getter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Pattern;
 
@@ -23,6 +25,8 @@ public class AddEditLogViewModel {
     //Regex for date entry
     private static final String DATE_PATTERN = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\\d{4}$";
     private static final Pattern pattern = Pattern.compile(DATE_PATTERN);
+    Logger logger = LogManager.getLogger(AddEditLogViewModel.class);
+
     public TourLogDto createLog()
     {
         if (date.isEmpty().getValue() || comment.isEmpty().getValue() || difficulty.isEmpty().getValue() || distance.isEmpty().getValue()
@@ -50,6 +54,7 @@ public class AddEditLogViewModel {
                 {
                     newLog.setLogId(Long.valueOf(id.getValue()));
                 }
+                logger.info("Created new log for tour " + newLog.getTourId());
                 System.out.println(newLog);
                 return newLog;
 

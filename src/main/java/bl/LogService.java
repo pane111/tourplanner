@@ -24,8 +24,10 @@ public class LogService {
 
     public TourLogDto createLog(TourLogDto log) {
         try {
+            logger.info("Sending log to server: " + log);
             log.setLogId(null);
-            return restTemplate.postForObject(API_URL, log, TourLogDto.class);
+            String url = API_URL + "/" + log.getTourId();
+            return restTemplate.postForObject(url, log, TourLogDto.class);
         }
         catch (Exception e) {
             logger.error(e);
