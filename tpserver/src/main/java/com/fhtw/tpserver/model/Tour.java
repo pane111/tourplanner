@@ -32,63 +32,6 @@ public class Tour {
     private String from_coords;
     @JsonProperty("toCoords")
     private String to_coords;
-    //NOT A FINAL SOLUTION, PROGRAM REFUSES TO RECOGNIZE LOMBOK GETTERS/SETTERS
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getFrom_loc() {
-        return from_loc;
-    }
-
-    public void setFrom_loc(String from_loc) {
-        this.from_loc = from_loc;
-    }
-
-    public String getTo_loc() {
-        return to_loc;
-    }
-
-    public void setTo_loc(String to_loc) {
-        this.to_loc = to_loc;
-    }
-
-    public Double getDistance() {
-        return distance;
-    }
-
-    public void setDistance(Double distance) {
-        this.distance = distance;
-    }
-
-    public String getEstimated_time() {
-        return estimated_time;
-    }
-
-    public void setEstimated_time(String estimatedTime) {
-        this.estimated_time = estimatedTime;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
 
 
