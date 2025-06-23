@@ -23,6 +23,9 @@ public class TourDto {
     private String description;
 
     private Long id;
+
+    Coordinate fromCoord;
+    Coordinate toCoord;
     //create additional "image" variable later
 
     public TourDto(String name, String from, String to, Double distance, String estimatedTime, String description, @Nullable Long id) {

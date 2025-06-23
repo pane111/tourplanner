@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
+import org.hibernate.annotations.Type;
 
 @Data
 @Entity
@@ -27,8 +28,10 @@ public class Tour {
     private String description;
     @JsonProperty("image")
     private String image;
-
-
+    @JsonProperty("fromCoords")
+    private String from_coords;
+    @JsonProperty("toCoords")
+    private String to_coords;
     //NOT A FINAL SOLUTION, PROGRAM REFUSES TO RECOGNIZE LOMBOK GETTERS/SETTERS
 
     public String getName() {

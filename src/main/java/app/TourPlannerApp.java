@@ -1,5 +1,7 @@
 package app;
 
+import Controller.DetailsController;
+import Controller.Mediator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -29,6 +31,7 @@ public class TourPlannerApp extends Application {
         primaryStage.setTitle("Tour Planner");
         primaryStage.setScene(scene);
         primaryStage.show();
+        Mediator.getInstance().details.setHostServices(this.getHostServices());
     }
 
     public static void main(String[] args) {

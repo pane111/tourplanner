@@ -2,12 +2,12 @@ module org.example.tourplanner {
     requires javafx.controls;
     requires javafx.fxml;
     requires static lombok;
-    requires java.desktop;
     requires spring.context;
     requires spring.web;
-    requires com.fasterxml.jackson.annotation;
     requires org.apache.logging.log4j;
     requires jakarta.annotation;
+    requires com.fasterxml.jackson.databind;
+    requires jdk.compiler;
 
 
     opens app to javafx.fxml;

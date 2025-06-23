@@ -29,15 +29,6 @@
                         <TextField fx:id="fromField" promptText="Dallas"/>
                     </VBox>
 
-                    <VBox alignment="CENTER_LEFT">
-                        <Label text="Distance (in km): "/>
-                        <TextField fx:id="distField" promptText="1000.0"/>
-                    </VBox>
-
-                    <VBox alignment="CENTER_LEFT">
-                        <Label text="Est. Duration: "/>
-                        <TextField fx:id="durationField" promptText="50 hours"/>
-                    </VBox>
 
                 </VBox>
 

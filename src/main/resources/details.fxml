@@ -42,10 +42,10 @@
         </VBox>
 
 
-        <HBox  style="-fx-padding:10" spacing="10" alignment="CENTER_RIGHT" >
-            <ImageView fitHeight="400" fitWidth="400">
-                <Image url="@images/placeholder_map.png"/>
-            </ImageView>
+        <HBox  style="-fx-padding:10" spacing="10" alignment="TOP_RIGHT" >
+            <Button text="View Map" onAction="#onMapClick"/>
+
+
         </HBox>
     </HBox>
 

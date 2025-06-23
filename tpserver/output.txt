@@ -8,24 +8,24 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2025-06-23T03:29:46.814+02:00  INFO 27924 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Starting TourplannerServerApplication using Java 23.0.1 with PID 27924 (D:\Uni\SWEN\tourplanner\tpserver\target\classes started by Paul in D:\Uni\SWEN\tourplanner)
-2025-06-23T03:29:46.816+02:00  INFO 27924 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : No active profile set, falling back to 1 default profile: "default"
-2025-06-23T03:29:47.146+02:00  INFO 27924 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-23T03:29:47.200+02:00  INFO 27924 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
-2025-06-23T03:29:47.409+02:00  INFO 27924 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-23T03:29:47.417+02:00  INFO 27924 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-23T03:29:47.417+02:00  INFO 27924 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-06-23T03:29:47.443+02:00  INFO 27924 --- [TourplannerServer] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-23T03:29:47.444+02:00  INFO 27924 --- [TourplannerServer] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 600 ms
-2025-06-23T03:29:47.554+02:00  INFO 27924 --- [TourplannerServer] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-23T03:29:47.571+02:00  INFO 27924 --- [TourplannerServer] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version [WORKING]
-2025-06-23T03:29:47.584+02:00  INFO 27924 --- [TourplannerServer] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-23T03:29:47.733+02:00  INFO 27924 --- [TourplannerServer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-23T03:29:47.746+02:00  INFO 27924 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-23T03:29:47.860+02:00  INFO 27924 --- [TourplannerServer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5817f1ca
-2025-06-23T03:29:47.861+02:00  INFO 27924 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-23T03:29:47.887+02:00  WARN 27924 --- [TourplannerServer] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-23T03:29:47.898+02:00  INFO 27924 --- [TourplannerServer] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-23T05:55:29.201+02:00  INFO 28344 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Starting TourplannerServerApplication using Java 23.0.1 with PID 28344 (D:\Uni\SWEN\tourplanner\tpserver\target\classes started by Paul in D:\Uni\SWEN\tourplanner)
+2025-06-23T05:55:29.203+02:00  INFO 28344 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-06-23T05:55:29.523+02:00  INFO 28344 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-23T05:55:29.578+02:00  INFO 28344 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2025-06-23T05:55:29.754+02:00  INFO 28344 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-23T05:55:29.762+02:00  INFO 28344 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-23T05:55:29.762+02:00  INFO 28344 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-23T05:55:29.783+02:00  INFO 28344 --- [TourplannerServer] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-23T05:55:29.783+02:00  INFO 28344 --- [TourplannerServer] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 552 ms
+2025-06-23T05:55:29.893+02:00  INFO 28344 --- [TourplannerServer] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-23T05:55:29.910+02:00  INFO 28344 --- [TourplannerServer] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version [WORKING]
+2025-06-23T05:55:29.922+02:00  INFO 28344 --- [TourplannerServer] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-23T05:55:30.033+02:00  INFO 28344 --- [TourplannerServer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-23T05:55:30.044+02:00  INFO 28344 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-23T05:55:30.112+02:00  INFO 28344 --- [TourplannerServer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52b32b70
+2025-06-23T05:55:30.113+02:00  INFO 28344 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-23T05:55:30.125+02:00  WARN 28344 --- [TourplannerServer] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-23T05:55:30.134+02:00  INFO 28344 --- [TourplannerServer] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -33,28 +33,73 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-23T03:29:48.258+02:00  INFO 27924 --- [TourplannerServer] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-23T03:29:48.301+02:00  INFO 27924 --- [TourplannerServer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-23T03:29:48.475+02:00  WARN 27924 --- [TourplannerServer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-23T03:29:48.676+02:00  INFO 27924 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-23T03:29:48.680+02:00  INFO 27924 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Started TourplannerServerApplication in 2.082 seconds (process running for 2.598)
-2025-06-23T03:29:53.574+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-23T03:29:53.574+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-23T03:29:53.575+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-06-23T03:29:53.587+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+2025-06-23T05:55:30.453+02:00  INFO 28344 --- [TourplannerServer] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       add column log_id bigint generated by default as identity
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       alter column comment set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       alter column date set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       alter column difficulty set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       alter column distance set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.logs 
+       alter column time set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column description set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column estimated_time set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column from_coords set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column from_loc set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column image set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column name set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column to_coords set data type varchar(255)
+Hibernate: 
+    alter table if exists tp_schema.tours 
+       alter column to_loc set data type varchar(255)
+2025-06-23T05:55:30.517+02:00  INFO 28344 --- [TourplannerServer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-23T05:55:30.604+02:00  INFO 28344 --- [TourplannerServer] [           main] com.fhtw.tpserver.bl.ORSService          : API Key: 5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a
+2025-06-23T05:55:30.759+02:00  WARN 28344 --- [TourplannerServer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-23T05:55:30.919+02:00  INFO 28344 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-23T05:55:30.923+02:00  INFO 28344 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Started TourplannerServerApplication in 1.9 seconds (process running for 2.249)
+2025-06-23T05:56:31.974+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23T05:56:31.974+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-23T05:56:31.975+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-23T05:56:31.986+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:29:53.766+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+2025-06-23T05:56:32.161+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
 Hibernate: 
     select
         tl1_0.log_id,
@@ -67,76 +112,100 @@ Hibernate:
         tl1_0.tour_id 
     from
         tp_schema.logs tl1_0
-2025-06-23T03:31:24.562+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-06-23T03:31:24.661+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-06-23T03:31:31.725+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Create tour awd
+2025-06-23T05:56:56.656+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Praterstern
+2025-06-23T05:56:57.140+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Vienna
+2025-06-23T05:56:57.329+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Create tour Rathaus tour
 Hibernate: 
     insert 
     into
         tp_schema.tours
-        (description, distance, estimated_time, from_loc, image, name, to_loc) 
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
     values
-        (?, ?, ?, ?, ?, ?, ?)
-2025-06-23T03:31:31.747+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T05:56:57.356+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:31:58.916+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Create tour dddvxd
+2025-06-23T05:58:08.512+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T05:58:08.618+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T05:58:23.097+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T05:58:23.362+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T05:58:23.523+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Create tour awdawd
 Hibernate: 
     insert 
     into
         tp_schema.tours
-        (description, distance, estimated_time, from_loc, image, name, to_loc) 
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
     values
-        (?, ?, ?, ?, ?, ?, ?)
-2025-06-23T03:31:58.924+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T05:58:23.530+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:32:28.819+02:00  WARN 27924 --- [TourplannerServer] [io-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-06-23T03:32:28.832+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+2025-06-23T05:59:09.136+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T05:59:09.235+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.LogController     : Get all logs
 Hibernate: 
     select
         tl1_0.log_id,
@@ -149,33 +218,38 @@ Hibernate:
         tl1_0.tour_id 
     from
         tp_schema.logs tl1_0
-2025-06-23T03:32:38.945+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+2025-06-23T05:59:25.473+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T05:59:25.758+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:37:09.405+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+2025-06-23T06:00:33.729+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:37:09.512+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+2025-06-23T06:00:33.829+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
 Hibernate: 
     select
         tl1_0.log_id,
@@ -188,81 +262,125 @@ Hibernate:
         tl1_0.tour_id 
     from
         tp_schema.logs tl1_0
-2025-06-23T03:37:23.271+02:00  WARN 27924 --- [TourplannerServer] [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2025-06-23T03:37:23.278+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-06-23T03:39:54.914+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+2025-06-23T06:00:39.113+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 5
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
-        tp_schema.tours t1_0
-2025-06-23T03:39:55.017+02:00  INFO 27924 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.LogController     : Get all logs
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
 Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
+    delete 
     from
-        tp_schema.logs tl1_0
-2025-06-23T03:40:05.172+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:00:39.126+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 5
+2025-06-23T06:00:39.129+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
         t1_0.description,
         t1_0.distance,
         t1_0.estimated_time,
+        t1_0.from_coords,
         t1_0.from_loc,
         t1_0.image,
         t1_0.name,
+        t1_0.to_coords,
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-06-23T03:40:05.278+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.LogController     : Get all logs
+2025-06-23T06:00:40.064+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 4
 Hibernate: 
     select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
     from
-        tp_schema.logs tl1_0
-2025-06-23T03:40:20.107+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.LogController     : Create log for tour 5
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:00:40.069+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 4
+2025-06-23T06:00:40.071+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:00:51.006+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:00:51.271+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:00:51.435+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Create tour dawda
 Hibernate: 
     insert 
     into
-        tp_schema.logs
-        (comment, date, difficulty, distance, rating, time, tour_id) 
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
     values
-        (?, ?, ?, ?, ?, ?, ?)
-2025-06-23T03:40:20.117+02:00  INFO 27924 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:00:51.448+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:01:48.394+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:01:48.500+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
 Hibernate: 
     select
         tl1_0.log_id,
@@ -275,8 +393,2419 @@ Hibernate:
         tl1_0.tour_id 
     from
         tp_schema.logs tl1_0
-2025-06-23T03:40:24.282+02:00  INFO 27924 --- [TourplannerServer] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-23T03:40:24.286+02:00  INFO 27924 --- [TourplannerServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-23T03:40:24.288+02:00  INFO 27924 --- [TourplannerServer] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-23T03:40:24.290+02:00  INFO 27924 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-23T03:40:24.291+02:00  INFO 27924 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-23T06:01:59.984+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:02:00.332+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:02:28.625+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:02:28.722+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:02:45.434+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=wien rathaus
+2025-06-23T06:02:45.726+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:05:54.184+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:05:54.284+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:06:07.272+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:06:08.456+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Sydney
+2025-06-23T06:06:08.588+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Create tour wwwww
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:06:08.596+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:12:45.113+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:12:45.210+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:13:08.085+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:13:08.384+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Graz Rathaus
+2025-06-23T06:13:08.541+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.357511,48.211535&end=15.432739,47.065852
+2025-06-23T06:13:08.905+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Create tour Rathaus tour
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:13:08.912+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:13:32.264+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:13:32.366+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:13:49.658+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:13:49.929+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Feldbach Rathaus
+2025-06-23T06:13:50.076+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.357511,48.211535&end=15.888819,46.952538
+2025-06-23T06:13:50.620+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Create tour Rathaus tour 2
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:13:50.628+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:17:18.538+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:17:18.635+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:17:53.586+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:17:53.684+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:19:28.663+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:19:28.759+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:19:51.718+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:19:51.814+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:21:03.581+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:21:03.680+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:21:06.642+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 9
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:21:06.648+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 9
+2025-06-23T06:21:06.650+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:21:08.389+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 8
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:21:08.396+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 8
+2025-06-23T06:21:08.397+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:21:31.047+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:21:31.345+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Seestadt
+2025-06-23T06:21:31.498+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.357511,48.211535&end=16.348388,48.198674
+2025-06-23T06:21:36.822+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Create tour Rathaus bis Seestadt
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:21:36.830+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:23:08.371+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:23:08.472+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:26:24.439+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:26:24.539+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:26:31.386+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 10
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:26:31.392+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 10
+2025-06-23T06:26:31.394+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:26:32.432+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 7
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:26:32.438+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 7
+2025-06-23T06:26:32.440+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:26:34.048+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 6
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:26:34.054+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 6
+2025-06-23T06:26:34.056+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:27:49.615+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:27:49.720+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:28:41.747+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Volkstheater
+2025-06-23T06:28:42.051+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Wien Rathaus
+2025-06-23T06:28:42.194+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.348388,48.198674&end=16.357511,48.211535
+2025-06-23T06:28:42.281+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Create tour Rathaus Tour
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:28:42.295+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:30:26.339+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:30:26.436+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:30:52.528+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Tokyo
+2025-06-23T06:30:52.732+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Vienna
+2025-06-23T06:30:52.912+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=139.75391,35.695126&end=16.348388,48.198674
+2025-06-23T06:30:52.983+02:00 ERROR 28344 --- [TourplannerServer] [nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request on GET request for "https://api.openrouteservice.org/v2/directions/foot-walking": "{"error":{"code":2004,"message":"Request parameters exceed the server configuration limits. The approximated route distance must not be greater than 6000000.0 meters."},"info":{"engine":{"build_date":"2025-05-06T08:31:01Z","graph_version":"1","graph_date":"2025-06-09T15:02:29Z","version":"9.2.0"},"timestamp":1750653052728}}"] with root cause
+
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request on GET request for "https://api.openrouteservice.org/v2/directions/foot-walking": "{"error":{"code":2004,"message":"Request parameters exceed the server configuration limits. The approximated route distance must not be greater than 6000000.0 meters."},"info":{"engine":{"build_date":"2025-05-06T08:31:01Z","graph_version":"1","graph_date":"2025-06-09T15:02:29Z","version":"9.2.0"},"timestamp":1750653052728}}"
+	at spring.web@6.2.5/org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:103) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:415) ~[spring-web-6.2.5.jar:na]
+	at com.fhtw.tpserver/com.fhtw.tpserver.bl.ORSService.getDirections(ORSService.java:32) ~[classes/:na]
+	at com.fhtw.tpserver/com.fhtw.tpserver.rest.ORSController.getDirections(ORSController.java:23) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at spring.web@6.2.5/org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.5.jar:na]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.5.jar:6.2.5]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.39.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at spring.web@6.2.5/org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at spring.web@6.2.5/org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at spring.web@6.2.5/org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.5.jar:na]
+	at spring.web@6.2.5/org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.5.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.39.jar:10.1.39]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2025-06-23T06:30:53.007+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Create tour Tokyo Tour
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:30:53.014+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:33:22.418+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 12
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T06:33:22.425+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 12
+2025-06-23T06:33:22.427+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:33:42.702+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Seoul
+2025-06-23T06:33:42.921+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Tokyo
+2025-06-23T06:33:43.002+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=127.009676,37.539619&end=139.75391,35.695126
+2025-06-23T06:33:43.713+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Create tour Tokyo Tour 2
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T06:33:43.720+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:46:00.570+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:46:00.673+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:46:16.875+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:46:16.941+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:48:16.144+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:48:16.211+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:49:07.976+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:49:08.043+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:49:38.072+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:49:38.141+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:52:16.772+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:52:16.841+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:53:55.076+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:53:55.145+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:55:08.645+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:55:08.715+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:55:17.010+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:55:17.080+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:55:51.408+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:55:51.475+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T06:56:21.915+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T06:56:21.982+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:01:57.950+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:01:58.027+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:02:40.596+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:02:40.603+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:05:53.437+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:05:53.502+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:06:02.863+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:06:03.393+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:06:03.488+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:06:04.202+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:06:04.210+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Update tour with id 14
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+2025-06-23T07:06:04.217+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:06:16.241+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:06:16.312+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:06:34.686+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:06:34.759+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:06:37.965+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 14
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:06:37.970+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 14
+2025-06-23T07:06:37.972+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:06:44.272+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:06:44.590+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:06:44.684+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:06:45.147+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:06:45.158+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:06:45.165+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:07:05.866+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:07:05.932+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:07:07.863+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 15
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:07:07.869+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 15
+2025-06-23T07:07:07.871+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:07:15.141+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:07:15.457+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:07:15.551+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:07:16.102+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:07:16.110+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:07:16.116+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:07:31.186+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:07:31.256+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:07:32.905+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:08:41.038+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:08:41.103+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:08:43.997+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 16
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:08:44.003+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 16
+2025-06-23T07:08:44.005+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:08:50.321+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:08:50.680+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:08:50.774+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:08:51.232+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:08:51.239+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:08:51.245+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:09:42.662+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:09:42.729+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:09:45.088+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 17
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:09:45.094+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 17
+2025-06-23T07:09:45.096+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:09:50.774+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:09:51.087+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:09:51.188+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:09:51.700+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:09:51.708+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:09:51.714+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:04.819+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:04.895+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:11:06.708+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 18
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:11:06.715+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 18
+2025-06-23T07:11:06.717+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:11.136+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:11:11.500+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:11:11.593+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:11:14.531+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:11:14.546+02:00  WARN 28344 --- [TourplannerServer] [io-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:11:14.552+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:38.074+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:38.139+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:11:40.955+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 19
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:11:40.961+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 19
+2025-06-23T07:11:40.962+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:11:46.422+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:11:46.752+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:11:46.845+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:11:47.304+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:11:47.311+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:11:47.317+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:12:35.139+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:12:35.206+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:12:37.288+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 20
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:12:37.293+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 20
+2025-06-23T07:12:37.294+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:12:40.501+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:12:40.507+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:16:35.929+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:16:35.994+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:16:45.246+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:16:45.602+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:16:45.707+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:16:46.189+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Create tour Escape from Berlin
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:16:46.197+02:00  WARN 28344 --- [TourplannerServer] [nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "null"]
+2025-06-23T07:16:46.203+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:17:17.405+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:17:17.475+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:17:19.717+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 21
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    delete 
+    from
+        tp_schema.tours 
+    where
+        id=?
+2025-06-23T07:17:19.729+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 21
+2025-06-23T07:17:19.731+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:17:25.297+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Update tour with id 2
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    update
+        tp_schema.tours 
+    set
+        description=?,
+        distance=?,
+        estimated_time=?,
+        from_coords=?,
+        from_loc=?,
+        image=?,
+        name=?,
+        to_coords=?,
+        to_loc=? 
+    where
+        id=?
+2025-06-23T07:17:25.311+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:17:38.885+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Update tour with id 2
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    update
+        tp_schema.tours 
+    set
+        description=?,
+        distance=?,
+        estimated_time=?,
+        from_coords=?,
+        from_loc=?,
+        image=?,
+        name=?,
+        to_coords=?,
+        to_loc=? 
+    where
+        id=?
+2025-06-23T07:17:38.899+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:19:24.900+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:19:24.968+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:19:30.541+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Berlin
+2025-06-23T07:19:30.904+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Munich
+2025-06-23T07:19:31.021+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=13.407032,52.524932&end=11.544467,48.152126
+2025-06-23T07:19:31.564+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Update tour with id 2
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    update
+        tp_schema.tours 
+    set
+        description=?,
+        distance=?,
+        estimated_time=?,
+        from_coords=?,
+        from_loc=?,
+        image=?,
+        name=?,
+        to_coords=?,
+        to_loc=? 
+    where
+        id=?
+2025-06-23T07:19:31.574+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:19:38.494+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Vienna
+2025-06-23T07:19:38.726+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Graz
+2025-06-23T07:19:38.811+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.348388,48.198674&end=15.432739,47.065852
+2025-06-23T07:19:39.133+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.TourController    : Update tour with id 1
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    update
+        tp_schema.tours 
+    set
+        description=?,
+        distance=?,
+        estimated_time=?,
+        from_coords=?,
+        from_loc=?,
+        image=?,
+        name=?,
+        to_coords=?,
+        to_loc=? 
+    where
+        id=?
+2025-06-23T07:19:39.142+02:00  INFO 28344 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:20:11.062+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:20:11.128+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.LogController     : Get all logs
+Hibernate: 
+    select
+        tl1_0.log_id,
+        tl1_0.comment,
+        tl1_0.date,
+        tl1_0.difficulty,
+        tl1_0.distance,
+        tl1_0.rating,
+        tl1_0.time,
+        tl1_0.tour_id 
+    from
+        tp_schema.logs tl1_0
+2025-06-23T07:20:26.859+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Dallas
+2025-06-23T07:20:27.127+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Albuquerque
+2025-06-23T07:20:27.277+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=-96.784359,32.736212&end=-106.579128,35.128683
+2025-06-23T07:20:27.683+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Create tour New Tour
+Hibernate: 
+    insert 
+    into
+        tp_schema.tours
+        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-06-23T07:20:27.689+02:00  INFO 28344 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.description,
+        t1_0.distance,
+        t1_0.estimated_time,
+        t1_0.from_coords,
+        t1_0.from_loc,
+        t1_0.image,
+        t1_0.name,
+        t1_0.to_coords,
+        t1_0.to_loc 
+    from
+        tp_schema.tours t1_0
+2025-06-23T07:20:44.912+02:00  INFO 28344 --- [TourplannerServer] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-23T07:20:44.916+02:00  INFO 28344 --- [TourplannerServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-23T07:20:44.918+02:00  INFO 28344 --- [TourplannerServer] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-23T07:20:44.920+02:00  INFO 28344 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-23T07:20:44.922+02:00  INFO 28344 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

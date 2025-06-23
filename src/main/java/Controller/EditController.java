@@ -9,6 +9,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.Getter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 
@@ -16,8 +18,6 @@ public class EditController {
 
     public TextField toField;
     public TextField fromField;
-    public TextField distField;
-    public TextField durationField;
     public TextArea descriptionField;
     public Label errorField;
     public TextField nameField;
@@ -25,16 +25,14 @@ public class EditController {
 
     @Getter
     private AddEditViewModel viewModel;
-
+    Logger logger = LogManager.getLogger(EditController.class);
     public void initialize() {
         Mediator.getInstance().edit=this;
         viewModel = new AddEditViewModel();
         nameField.textProperty().bindBidirectional(viewModel.getName());
         fromField.textProperty().bindBidirectional(viewModel.getFrom());
         toField.textProperty().bindBidirectional(viewModel.getTo());
-        distField.textProperty().bindBidirectional(viewModel.getDistance());
         descriptionField.textProperty().bindBidirectional(viewModel.getDescription());
-        durationField.textProperty().bindBidirectional(viewModel.getEstimatedTime());
         idField.textProperty().bindBidirectional(viewModel.getId());
 
 
@@ -44,8 +42,6 @@ public class EditController {
         fromField.setText(tourDto.getFrom());
         toField.setText(tourDto.getTo());
         descriptionField.setText(tourDto.getDescription());
-        distField.setText(tourDto.getDistance().toString());
-        durationField.setText(tourDto.getEstimatedTime());
         descriptionField.setText(tourDto.getDescription());
         idField.setText(tourDto.getId().toString());
     }
@@ -53,9 +49,15 @@ public class EditController {
     @FXML
     private void onSave() throws IOException {
 
-        TourDto t = viewModel.createTour();
+        TourDto t = viewModel.createTourWithId();
+
         if (t!=null)
         {
+
+            /*
+            TourDto orsTour = Mediator.getInstance().tourService.createTour(t);
+            orsTour.setId(t.getId());*/
+            logger.info("Saving tour with id " + t.getId());
             Mediator.getInstance().tourService.updateTour(t);
             Mediator.getInstance().list.refresh();
             Stage stage = (Stage) toField.getScene().getWindow();
@@ -65,7 +67,7 @@ public class EditController {
         }
         else
         {
-            errorField.setText("Please make sure you have filled out all fields and entered a valid distance!");
+            errorField.setText("Please make sure you have filled out all fields!");
         }
     }
 

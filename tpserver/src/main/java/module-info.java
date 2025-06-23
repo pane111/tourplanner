@@ -8,9 +8,10 @@ open module com.fhtw.tpserver {
     requires spring.data.commons;
     requires org.hibernate.orm.core;
     requires spring.context;
-    requires com.fasterxml.jackson.annotation;
     requires jakarta.annotation;
     requires org.apache.logging.log4j;
+    requires spring.beans;
+    requires com.fasterxml.jackson.databind;
 
     exports com.fhtw.tpserver;
     exports com.fhtw.tpserver.rest;

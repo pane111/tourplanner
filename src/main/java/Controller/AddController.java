@@ -10,15 +10,12 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.Getter;
 
-import javax.print.attribute.standard.Media;
 import java.io.IOException;
 
 public class AddController {
 
     public TextField toField;
     public TextField fromField;
-    public TextField distField;
-    public TextField durationField;
     public TextArea descriptionField;
     public Label errorField;
     public TextField nameField;
@@ -32,9 +29,7 @@ public class AddController {
         nameField.textProperty().bindBidirectional(viewModel.getName());
         fromField.textProperty().bindBidirectional(viewModel.getFrom());
         toField.textProperty().bindBidirectional(viewModel.getTo());
-        distField.textProperty().bindBidirectional(viewModel.getDistance());
         descriptionField.textProperty().bindBidirectional(viewModel.getDescription());
-        durationField.textProperty().bindBidirectional(viewModel.getEstimatedTime());
     }
 
     @FXML

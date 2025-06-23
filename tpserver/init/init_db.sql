@@ -1,14 +1,16 @@
 CREATE SCHEMA IF NOT EXISTS tp_schema;
 
 CREATE TABLE IF NOT EXISTS tp_schema.tours (
-                                 id BIGSERIAL PRIMARY KEY,
-                                 name TEXT,
-                                 from_loc TEXT,
-                                 to_loc TEXT,
-                                 distance DOUBLE PRECISION,
-                                 estimated_time TEXT,
-                                 description TEXT,
-                                 image TEXT
+                                id BIGSERIAL PRIMARY KEY,
+                                name TEXT,
+                                from_loc TEXT,
+                                to_loc TEXT,
+                                distance DOUBLE PRECISION,
+                                estimated_time TEXT,
+                                description TEXT,
+                                image TEXT,
+                                from_coords TEXT,
+                                to_coords TEXT
 );
 
 CREATE TABLE IF NOT EXISTS tp_schema.logs (
@@ -38,17 +40,17 @@ VALUES
 
 
 INSERT INTO tp_schema.tours
-(name, from_loc, to_loc, distance, estimated_time, description, image)
+(name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
 VALUES
-    ('Dummy Tour', 'Vienna', 'Graz', 200.5, '2h', 'A scenic test route.', 'dummy.png');
+    ('Dummy Tour', 'Vienna', 'Graz', 200.5, '7856.0', 'A scenic test route.', 'dummy.png','43.6510,-79.3470','34.0522,-118.2437');
 INSERT INTO tp_schema.tours
-(name, from_loc, to_loc, distance, estimated_time, description, image)
+(name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
 VALUES
-    ('Escape from Berlin', 'Berlin', 'Anywhere', 9999, '1 Week', 'Get Out of Berlin', 'berlin.png');
+    ('Escape from Berlin', 'Berlin', 'Anywhere', 9999, '23423.0', 'Get Out of Berlin', 'berlin.png','51.5074,-0.1278','35.6895,139.6917');
 INSERT INTO tp_schema.tours
-(name, from_loc, to_loc, distance, estimated_time, description, image)
+(name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
 VALUES
-    ('FH Technikum Tour', 'FH Technikum', 'FH Technikum', 1, '1h', 'A tour through our beloved FH.', 'fh.png');
+    ('FH Technikum Tour', 'FH Technikum', 'FH Technikum', 1, '234.0', 'A tour through our beloved FH.', 'fh.png','-33.8688,151.2093','48.8566,2.3522');
 
 
 CREATE USER tp_user WITH PASSWORD 'user_pass';
