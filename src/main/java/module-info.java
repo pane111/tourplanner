@@ -8,6 +8,7 @@ module org.example.tourplanner {
     requires jakarta.annotation;
     requires com.fasterxml.jackson.databind;
     requires jdk.compiler;
+    requires java.desktop;
 
 
     opens app to javafx.fxml;

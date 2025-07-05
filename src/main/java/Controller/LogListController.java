@@ -5,6 +5,8 @@ import ViewModel.LogListViewModel;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import lombok.Getter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class LogListController {
 
@@ -12,7 +14,7 @@ public class LogListController {
     @Getter
     public LogListViewModel viewModel;
 
-
+    Logger logger = LogManager.getLogger(LogListController.class);
     public void initialize() {
         Mediator.getInstance().selectedTourId.set(0);
         Mediator.getInstance().logList=this;
@@ -35,8 +37,12 @@ public class LogListController {
         logListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
 
-                System.out.println(newValue.getDate());
+
                 Mediator.getInstance().log.setLog(newValue);
+
+
+
+
             }
         });
 

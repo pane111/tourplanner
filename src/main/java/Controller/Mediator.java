@@ -33,6 +33,7 @@ public class Mediator {
     public LogService logService;
     public HostServices hostServices;
 
+
     public TourService tourService;
 
     private Mediator() {

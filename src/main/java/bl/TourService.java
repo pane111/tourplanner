@@ -1,6 +1,7 @@
 package bl;
 
 import Model.Coordinate;
+import Model.SendableTour;
 import Model.TourDto;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -28,8 +29,21 @@ public class TourService {
         }
         return new TourDto[0];
     }
+    public TourDto fetchTour(Long id) {
+        try {
+            ResponseEntity<SendableTour> response = restTemplate.getForEntity(API_URL+"/"+id, SendableTour.class);
+            logger.info(response.getBody());
+            SendableTour st = response.getBody();
+            TourDto tourDto = new TourDto(st);
+            logger.info("Fetched tour: " + tourDto.getName() + ", coordinates - from: " + tourDto.getFromCoord().orsFormat() + ", to: "+tourDto.getToCoord().orsFormat());
+            return tourDto;
+        } catch (Exception e) {
+            logger.error(e);
+        }
+        return null;
+    }
 
-    public TourDto createTour(TourDto tour) {
+    public SendableTour createTour(TourDto tour) {
         try {
             tour.setId(null);
 
@@ -38,8 +52,10 @@ public class TourService {
                 return null;
             }
             calculateDistanceAndTime(tour);
-
-            return restTemplate.postForObject(API_URL, tour, TourDto.class);
+            SendableTour t = new SendableTour();
+            t.convertRegTour(tour);
+            logger.info("Sendable tour coords, from: " + t.getFrom_coords() + ", to: " + t.getTo_coords());
+            return restTemplate.postForObject(API_URL, t, SendableTour.class);
         } catch (Exception e) {
             logger.error(e);
         }
@@ -74,9 +90,11 @@ public class TourService {
     private boolean populateCoordinates(TourDto tour) {
         try {
             Coordinate fromCoord = geocode(tour.getFrom());
+            logger.info("From coordinates: " + fromCoord.orsFormat());
             if (fromCoord == null) return false;
             tour.setFromCoord(fromCoord);
             Coordinate toCoord = geocode(tour.getTo());
+            logger.info("To coordinates: " + toCoord.orsFormat());
             if (toCoord == null) return false;
             tour.setToCoord(toCoord);
 
@@ -120,6 +138,30 @@ public class TourService {
             return null;
         }
     }
+
+    public JsonNode setMapData(TourDto tour) {
+
+        try {
+            Coordinate fromC = tour.getFromCoord();
+            Coordinate toC = tour.getToCoord();
+
+            if (fromC == null || toC == null) {
+                logger.error("Coordinates missing for distance calculation");
+                return null;
+            }
+
+            String directionUrl = ORS_URL + "/directions?start=" + fromC.orsFormat() + "&end=" + toC.orsFormat();
+            logger.info("Get directions url: " + directionUrl);
+            JsonNode directionResponse = restTemplate.getForObject(directionUrl, JsonNode.class);
+            return directionResponse;
+
+        } catch (Exception e) {
+            logger.error("setMapData error: ", e);
+        }
+        return null;
+    }
+
+
 
     private void calculateDistanceAndTime(TourDto tour) {
         try {

@@ -43,7 +43,7 @@
 
 
         <HBox  style="-fx-padding:10" spacing="10" alignment="TOP_RIGHT" >
-            <Button text="View Map" onAction="#onMapClick"/>
+            <Button fx:id="mapButton" text="View Map" onAction="#onMapClick" disable="true"/>
 
 
         </HBox>

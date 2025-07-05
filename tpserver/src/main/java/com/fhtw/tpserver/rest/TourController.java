@@ -37,13 +37,16 @@ public class TourController {
 
     @PostMapping("/tours")
     public ResponseEntity<Tour> createTour(@RequestBody Tour tour) {
+
+
         LOGGER.info("Create tour {}", tour.getName());
+        LOGGER.info("Coordinates - From: " + tour.getFrom_coords() + " To: " + tour.getTo_coords());
         Tour savedTour = tourRepository.save(tour);
         return new ResponseEntity<>(savedTour, HttpStatus.CREATED);
     }
 
 
-    //Not working
+
     @PutMapping("/tours/{id}")
     public ResponseEntity<Tour> updateTour(@PathVariable Long id, @RequestBody Tour updatedTour) {
         LOGGER.info("Update tour with id {}", id);

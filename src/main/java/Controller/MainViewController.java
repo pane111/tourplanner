@@ -57,6 +57,7 @@ public class MainViewController {
     public void onDelete(ActionEvent actionEvent) {
         Mediator.getInstance().tourService.deleteTour(Mediator.getInstance().listController.getLastSelectedItem());
         Mediator.getInstance().list.refresh();
+        Mediator.getInstance().details.unselect();
     }
 
     public void onEdit(ActionEvent actionEvent) {

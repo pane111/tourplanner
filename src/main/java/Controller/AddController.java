@@ -47,7 +47,7 @@ public class AddController {
         }
         else
         {
-            errorField.setText("Please make sure you have filled out all fields and entered a valid distance!");
+            errorField.setText("Please make sure you have filled out all fields!");
         }
     }
 

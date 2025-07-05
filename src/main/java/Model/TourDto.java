@@ -39,6 +39,18 @@ public class TourDto {
             this.id = id;
         }
     }
+    public TourDto(SendableTour st)
+    {
+        this.name = st.getName();
+        this.id = st.getId();
+        this.from = st.getFrom_loc();
+        this.to = st.getTo_loc();
+        this.distance = st.getDistance();
+        this.estimatedTime = st.getEstimated_time();
+        this.description = st.getDescription();
+        this.fromCoord = new Coordinate(st.getFrom_coords());
+        this.toCoord = new Coordinate(st.getTo_coords());
+    }
 
     @Override
     public String toString() {

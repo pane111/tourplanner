@@ -14,6 +14,18 @@ public class DetailsViewModel {
     private final StringProperty description = new SimpleStringProperty();
     private final LongProperty id = new SimpleLongProperty();
 
+    public void unset()
+    {
+        name.set(null);
+        from.set(null);
+        to.set(null);
+        distance.set(null);
+        estimatedTime.set(null);
+        description.set(null);
+
+    }
+
+
     public void setCurTour(TourDto tourDto)
     {
         if (tourDto !=null)
