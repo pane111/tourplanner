@@ -47,5 +47,18 @@ public class TourLogDto {
         rString=rsb.toString();
         return rString;
     }
+    public String getRatingStringAlt()
+    {
+        String rString="     ";
+        StringBuilder rsb =  new StringBuilder(rString);
+
+        for (int i = 0; i < rating; i++)
+        {
+
+            rsb.setCharAt(i,'*');
+        }
+        rString=rsb.toString();
+        return rString;
+    }
 
 }

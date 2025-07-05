@@ -9,6 +9,10 @@ module org.example.tourplanner {
     requires com.fasterxml.jackson.databind;
     requires jdk.compiler;
     requires java.desktop;
+    requires spring.beans;
+    requires kernel;
+    requires layout;
+    requires io;
 
 
     opens app to javafx.fxml;
