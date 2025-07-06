@@ -13,6 +13,8 @@ module org.example.tourplanner {
     requires kernel;
     requires layout;
     requires io;
+    requires com.opencsv;
+    requires java.sql;
 
 
     opens app to javafx.fxml;

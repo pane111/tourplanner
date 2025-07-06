@@ -1,5 +1,6 @@
 package Controller;
 
+import Model.SendableTour;
 import Model.TourDto;
 import Model.TourLogDto;
 import ViewModel.DetailsViewModel;
@@ -12,6 +13,8 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.element.Paragraph;
+import com.opencsv.bean.StatefulBeanToCsv;
+import com.opencsv.bean.StatefulBeanToCsvBuilder;
 import com.sun.tools.javac.Main;
 import javafx.application.HostServices;
 import javafx.event.ActionEvent;
@@ -32,6 +35,7 @@ import java.io.*;
 import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -62,6 +66,9 @@ public class DetailsController {
     @FXML
     private Button reportButton;
 
+    @FXML
+    private Button exportButton;
+
 
     @Getter
     private DetailsViewModel viewModel;
@@ -73,6 +80,7 @@ public class DetailsController {
     private TourDto tour;
 
     Logger logger = LogManager.getLogger(DetailsController.class);
+
     public void initialize() {
         viewModel = new DetailsViewModel();
         tourName.textProperty().bind(viewModel.getName());
@@ -85,34 +93,34 @@ public class DetailsController {
         Mediator.getInstance().details = this;
     }
 
-    public void setTour(TourDto tourDto)
-    {
+    public void setTour(TourDto tourDto) {
         viewModel.setCurTour(tourDto);
         tour = tourDto;
     }
 
-    public void showLogs()
-    {
+    public void showLogs() {
         logs.setVisible(true);
         mainDetailView.setVisible(false);
     }
-    public void showDetails()
-    {
+
+    public void showDetails() {
         mainDetailView.setVisible(true);
         logs.setVisible(false);
     }
-    public void enableMapButton()
-    {
+
+    public void enableMapButton() {
         mapButton.setDisable(false);
         reportButton.setDisable(false);
+        exportButton.setDisable(false);
     }
-    public void disableMapButton()
-    {
+
+    public void disableMapButton() {
         mapButton.setDisable(true);
         reportButton.setDisable(true);
+        exportButton.setDisable(true);
     }
-    public void unselect()
-    {
+
+    public void unselect() {
         viewModel.unset();
         disableMapButton();
     }
@@ -121,7 +129,7 @@ public class DetailsController {
         logger.info("Clicked on map");
         logger.info("Selected tour: " + tour + " with ID " + tour.getId());
         TourDto t = Mediator.getInstance().tourService.fetchTour(tour.getId());
-        logger.info("Fetched tour: " + t + " start coordinates: "+t.getFromCoord().orsFormat()+" end coordinates: "+t.getToCoord().orsFormat());
+        logger.info("Fetched tour: " + t + " start coordinates: " + t.getFromCoord().orsFormat() + " end coordinates: " + t.getToCoord().orsFormat());
 
 
         try {
@@ -129,7 +137,8 @@ public class DetailsController {
 
             //We retrieve the geojson using ORS, then save it to a temporary file
             JsonNode jn = Mediator.getInstance().tourService.setMapData(t);
-            String dirJson = "var directions = " +mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jn) + ";";
+            String dirJson = "var directions = " + mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jn) + ";";
+
             //then we create a temporary html page
             String htmlPage = """
                     <!DOCTYPE html>
@@ -153,9 +162,11 @@ public class DetailsController {
                     var bbox = directions.bbox;
                     map.fitBounds([[bbox[1], bbox[0]], [bbox[3], bbox[2]]]);
                     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '2024 © FH Technikum Wien'
+                        attribution: '2025 © FH Technikum Wien'
                     }).addTo(map);
                     L.geoJSON(directions).addTo(map);
+                    
+                    
                     </script>
                     </body>
                     </html>
@@ -168,15 +179,14 @@ public class DetailsController {
 
             //and then we open the page
             hostServices.showDocument(tempHtml.toUri().toString());
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             logger.error(e);
         }
 
     }
 
-    public static final String TARGET_PDF = "target/target.pdf";
+    public static final String TARGET_PDF = "target/report.pdf";
 
     public void onReportClick(ActionEvent actionEvent) {
         try {
@@ -185,7 +195,7 @@ public class DetailsController {
             Document document = new Document(pdfDocument);
 
             Paragraph header = new Paragraph("Tour Planner Report")
-            .setFont(PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD))
+                    .setFont(PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD))
                     .setFontSize(14);
             document.add(header);
 
@@ -196,19 +206,18 @@ public class DetailsController {
 
             String rawTime = tour.getEstimatedTime();
             Double parsedTime = Double.valueOf(rawTime);
-            String eTime="";
-            if (parsedTime != null)
-            {
+            String eTime = "";
+            if (parsedTime != null) {
                 int seconds = parsedTime.intValue();
                 int hours = seconds / 3600;
-                int minutes = (seconds% 3600) / 60;
-                eTime=hours + " hours, " + minutes + " minutes";
+                int minutes = (seconds % 3600) / 60;
+                eTime = hours + " hours, " + minutes + " minutes";
             }
 
 
-            String descString = "From: " + tour.getFrom() +"\n"
+            String descString = "From: " + tour.getFrom() + "\n"
                     + "To: " + tour.getTo() + "\n"
-                    + "Distance: " + tour.getDistance() + " km"+"\n"
+                    + "Distance: " + tour.getDistance() + " km" + "\n"
                     + "Estimated Time: " + eTime + "\n"
                     + "Description: " + tour.getDescription();
             document.add(new Paragraph(descString));
@@ -230,17 +239,38 @@ public class DetailsController {
                         .setSymbolIndent(12)
                         .setListSymbol("");
                 for (TourLogDto log : tourLogs) {
-                    loglist.add(log.getRatingStringAlt() + " " + log.getDate() + " " + log.getTime() + " " + log.getComment());
+                    loglist.add(log.getRatingStringAlt() + " - " + log.getDate() + " - " + log.getTime() + " - " + log.getComment());
                 }
                 document.add(loglist);
 
             }
 
+            Paragraph idP = new Paragraph("Tour ID: " + tour.getId()).setFont(PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD));
+            document.add(idP);
             document.close();
             logger.info("Generated report");
         } catch (Exception e) {
             e.printStackTrace();
             logger.error(e);
         }
+    }
+    public static final String TARGET_EXPORT = "target/export.csv";
+    public void onExportClick(ActionEvent actionEvent) {
+        SendableTour t = new SendableTour();
+        logger.info("Exporting tour "+tour.getName());
+        TourDto fTour = Mediator.getInstance().tourService.fetchTour(tour.getId());
+        t.convertRegTour(fTour);
+        try (Writer writer = Files.newBufferedWriter(Paths.get(TARGET_EXPORT)))
+        {
+            StatefulBeanToCsv<SendableTour> beanToCsv = new StatefulBeanToCsvBuilder<SendableTour>(writer).build();
+            beanToCsv.write(t);
+            logger.info("Exported to CSV");
+        }
+        catch (Exception e)
+        {
+            logger.error(e);
+            e.printStackTrace();
+        }
+
     }
 }

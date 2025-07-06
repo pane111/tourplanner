@@ -1,24 +1,35 @@
 package Controller;
 
+import Model.SendableTour;
 import Model.TourDto;
+import com.opencsv.bean.CsvToBeanBuilder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
 
 public class MainViewController {
 
     @FXML private Button logButton;
     @FXML private Button detailButton;
 
-
+    Logger logger = LogManager.getLogger(MainViewController.class);
     private Integer curView=0; //0 = Details, 1 = Logs
 
     public void initialize() {
@@ -99,4 +110,54 @@ public class MainViewController {
             Mediator.getInstance().details.showLogs();
         }
     }
+
+    public void onImport(ActionEvent actionEvent) {
+
+        Window window = ((Node) actionEvent.getSource()).getScene().getWindow();
+        File selectedFile = openFile(window);
+        if (selectedFile!=null) {
+            logger.info("Imported file: " + selectedFile.getAbsolutePath());
+
+            try (Reader reader = new FileReader(selectedFile)) {
+                List<SendableTour> t = new CsvToBeanBuilder<SendableTour>(reader)
+                        .withType(SendableTour.class).withIgnoreLeadingWhiteSpace(true).build().parse();
+                if (!t.isEmpty()) {
+                    logger.info("Imported tour: " + t.getFirst().getName());
+                    TourDto newTour = new TourDto(t.getFirst());
+                    Mediator.getInstance().tourService.createTour(newTour);
+                    Mediator.getInstance().list.refresh();
+
+                }
+                else
+                {
+                    logger.error("Imported tour is empty");
+                }
+
+            } catch (Exception e) {
+                logger.error(e);
+                throw new RuntimeException(e);
+            }
+        }
+        else
+        {
+            logger.info("Cancelled selection or imported file is null");
+        }
+
+    }
+
+    public static final String TARGET_DIR = "target";
+    private File openFile(Window curWindow) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Open CSV file");
+
+        File defaultDir = new File(TARGET_DIR);
+        if (defaultDir.exists() && defaultDir.isDirectory()) {
+            fileChooser.setInitialDirectory(defaultDir);
+        }
+
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV file", "*.csv"));
+        return fileChooser.showOpenDialog(curWindow);
+    }
+
+
 }

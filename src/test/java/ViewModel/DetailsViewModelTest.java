@@ -28,7 +28,7 @@ class DetailsViewModelTest {
         assertEquals("Beach Trip", viewModel.getName().get());
         assertEquals("Vienna", viewModel.getFrom().get());
         assertEquals("Barcelona", viewModel.getTo().get());
-        assertEquals("1234,57 km", viewModel.getDistance().get());
+        assertEquals("1234.57 km", viewModel.getDistance().get());
         assertEquals("2 hours, 1 minutes", viewModel.getEstimatedTime().get());
         assertEquals("Summer adventure", viewModel.getDescription().get());
         assertEquals(77L, viewModel.getId().get());
@@ -79,7 +79,7 @@ class DetailsViewModelTest {
         DetailsViewModel viewModel = new DetailsViewModel();
         viewModel.setCurTour(tour);
 
-        assertEquals("42,42 km", viewModel.getDistance().get()); // or "42.42 km" depending on your Locale
+        assertEquals("42.42 km", viewModel.getDistance().get());
     }
 
 

@@ -42,15 +42,7 @@ VALUES
 INSERT INTO tp_schema.tours
 (name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
 VALUES
-    ('Dummy Tour', 'Vienna', 'Graz', 200.5, '7856.0', 'A scenic test route.', 'dummy.png','43.6510,-79.3470','34.0522,-118.2437');
-INSERT INTO tp_schema.tours
-(name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
-VALUES
-    ('Escape from Berlin', 'Berlin', 'Anywhere', 9999, '23423.0', 'Get Out of Berlin', 'berlin.png','51.5074,-0.1278','35.6895,139.6917');
-INSERT INTO tp_schema.tours
-(name, from_loc, to_loc, distance, estimated_time, description, image, from_coords,to_coords)
-VALUES
-    ('FH Technikum Tour', 'FH Technikum', 'FH Technikum', 1, '234.0', 'A tour through our beloved FH.', 'fh.png','-33.8688,151.2093','48.8566,2.3522');
+    ('FH Technikum Tour', 'Praterstern Wien', 'Höchstädtplatz Wien', 1, '234.0', 'From Praterstern to FH Technikum', 'fh.png','16.391564,48.217011','16.377229,48.239676');
 
 
 CREATE USER tp_user WITH PASSWORD 'user_pass';

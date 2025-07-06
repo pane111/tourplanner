@@ -25,6 +25,9 @@
         <Button fx:id="editTourButton" text="Edit" onAction="#onEdit"/>
         <Button fx:id="deleteTourButton" text="Delete" onAction="#onDelete"/>
       </HBox>
+      <HBox spacing="5"  style="-fx-padding: 5;">
+        <Button fx:id="importButton" text="Import from File..." onAction="#onImport"/>
+      </HBox>
     </VBox>
 
 
