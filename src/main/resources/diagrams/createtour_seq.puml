@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant "Client App" as Client
+participant "Server" as Server
+database "Database" as DB
+participant "OpenRouteService API" as ORS
+
+User -> Client : Fill in tour form\nClick confirmation button
+Client -> Server : POST tour data
+
+Server -> ORS : Request route using location names
+ORS --> Server : Route info (distance, duration)
+Server -> DB : Save tour to DB
+DB --> Server : Tour updated
+Server --> Client : Tour submission success
+@enduml

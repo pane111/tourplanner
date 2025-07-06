@@ -1,0 +1,19 @@
+@startuml
+
+actor User
+rectangle Server {
+  usecase "Store Tour in DB" as UC_DB
+  usecase "Fetch Distance & Time\nfrom ORS" as UC_ORS
+}
+database "Database" as DB
+rectangle "OpenRouteService" as ORS
+
+User --> (Submit Tour)
+(Submit Tour) --> UC_DB
+(Submit Tour) --> UC_ORS
+UC_DB --> DB
+UC_ORS --> ORS
+
+UC_ORS --> (Return data)
+(Return data)-->(UC_DB)
+@enduml

@@ -8,24 +8,24 @@
 
  :: Spring Boot ::                (v3.4.4)
 
-2025-07-06T13:31:06.783+02:00  INFO 1816 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Starting TourplannerServerApplication using Java 23.0.1 with PID 1816 (D:\Uni\SWEN\tourplanner\tpserver\target\classes started by Paul in D:\Uni\SWEN\tourplanner)
-2025-07-06T13:31:06.785+02:00  INFO 1816 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : No active profile set, falling back to 1 default profile: "default"
-2025-07-06T13:31:07.101+02:00  INFO 1816 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-06T13:31:07.156+02:00  INFO 1816 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
-2025-07-06T13:31:07.339+02:00  INFO 1816 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-06T13:31:07.345+02:00  INFO 1816 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-06T13:31:07.346+02:00  INFO 1816 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-07-06T13:31:07.369+02:00  INFO 1816 --- [TourplannerServer] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-06T13:31:07.369+02:00  INFO 1816 --- [TourplannerServer] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 556 ms
-2025-07-06T13:31:07.476+02:00  INFO 1816 --- [TourplannerServer] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-06T13:31:07.492+02:00  INFO 1816 --- [TourplannerServer] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version [WORKING]
-2025-07-06T13:31:07.504+02:00  INFO 1816 --- [TourplannerServer] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-06T13:31:07.618+02:00  INFO 1816 --- [TourplannerServer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-06T13:31:07.631+02:00  INFO 1816 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-06T13:31:07.703+02:00  INFO 1816 --- [TourplannerServer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@145e958f
-2025-07-06T13:31:07.704+02:00  INFO 1816 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-06T13:31:07.717+02:00  WARN 1816 --- [TourplannerServer] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-06T13:31:07.727+02:00  INFO 1816 --- [TourplannerServer] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-07-06T14:29:07.664+02:00  INFO 12084 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Starting TourplannerServerApplication using Java 23.0.1 with PID 12084 (D:\Uni\SWEN\tourplanner\tpserver\target\classes started by Paul in D:\Uni\SWEN\tourplanner)
+2025-07-06T14:29:07.667+02:00  INFO 12084 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-07-06T14:29:07.993+02:00  INFO 12084 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-06T14:29:08.051+02:00  INFO 12084 --- [TourplannerServer] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-07-06T14:29:08.228+02:00  INFO 12084 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-06T14:29:08.235+02:00  INFO 12084 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-06T14:29:08.236+02:00  INFO 12084 --- [TourplannerServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-07-06T14:29:08.256+02:00  INFO 12084 --- [TourplannerServer] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-06T14:29:08.256+02:00  INFO 12084 --- [TourplannerServer] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 557 ms
+2025-07-06T14:29:08.363+02:00  INFO 12084 --- [TourplannerServer] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-06T14:29:08.380+02:00  INFO 12084 --- [TourplannerServer] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version [WORKING]
+2025-07-06T14:29:08.391+02:00  INFO 12084 --- [TourplannerServer] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-06T14:29:08.506+02:00  INFO 12084 --- [TourplannerServer] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-06T14:29:08.518+02:00  INFO 12084 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-06T14:29:08.594+02:00  INFO 12084 --- [TourplannerServer] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@382faf51
+2025-07-06T14:29:08.594+02:00  INFO 12084 --- [TourplannerServer] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-06T14:29:08.607+02:00  WARN 12084 --- [TourplannerServer] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-06T14:29:08.617+02:00  INFO 12084 --- [TourplannerServer] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.5
@@ -33,58 +33,16 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-07-06T13:31:08.051+02:00  INFO 1816 --- [TourplannerServer] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       add column log_id bigint generated by default as identity
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       alter column comment set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       alter column date set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       alter column difficulty set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       alter column distance set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.logs 
-       alter column time set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column description set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column estimated_time set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column from_coords set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column from_loc set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column image set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column name set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column to_coords set data type varchar(255)
-Hibernate: 
-    alter table if exists tp_schema.tours 
-       alter column to_loc set data type varchar(255)
-2025-07-06T13:31:08.116+02:00  INFO 1816 --- [TourplannerServer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-06T13:31:08.197+02:00  INFO 1816 --- [TourplannerServer] [           main] com.fhtw.tpserver.bl.ORSService          : API Key: 5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a
-2025-07-06T13:31:08.346+02:00  WARN 1816 --- [TourplannerServer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-06T13:31:08.486+02:00  INFO 1816 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-07-06T13:31:08.490+02:00  INFO 1816 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Started TourplannerServerApplication in 1.891 seconds (process running for 2.342)
-2025-07-06T13:31:14.049+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-06T13:31:14.050+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-06T13:31:14.050+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2025-07-06T13:31:14.061+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
+2025-07-06T14:29:08.968+02:00  INFO 12084 --- [TourplannerServer] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-06T14:29:08.996+02:00  INFO 12084 --- [TourplannerServer] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-06T14:29:09.081+02:00  INFO 12084 --- [TourplannerServer] [           main] com.fhtw.tpserver.bl.ORSService          : API Key: 5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a
+2025-07-06T14:29:09.275+02:00  WARN 12084 --- [TourplannerServer] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-06T14:29:09.510+02:00  INFO 12084 --- [TourplannerServer] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-06T14:29:09.517+02:00  INFO 12084 --- [TourplannerServer] [           main] c.f.t.TourplannerServerApplication       : Started TourplannerServerApplication in 2.051 seconds (process running for 2.481)
+2025-07-06T14:29:10.215+02:00  INFO 12084 --- [TourplannerServer] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-06T14:29:10.216+02:00  INFO 12084 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-06T14:29:10.216+02:00  INFO 12084 --- [TourplannerServer] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-07-06T14:29:10.230+02:00  INFO 12084 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
 Hibernate: 
     select
         t1_0.id,
@@ -99,7 +57,7 @@ Hibernate:
         t1_0.to_loc 
     from
         tp_schema.tours t1_0
-2025-07-06T13:31:14.207+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
+2025-07-06T14:29:10.385+02:00  INFO 12084 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
 Hibernate: 
     select
         tl1_0.log_id,
@@ -112,338 +70,8 @@ Hibernate:
         tl1_0.tour_id 
     from
         tp_schema.logs tl1_0
-2025-07-06T13:31:22.050+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get tour with id 1
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0 
-    where
-        t1_0.id=?
-2025-07-06T13:31:22.069+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.391564,48.217011&end=16.377229,48.239676
-2025-07-06T13:31:48.174+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:38:25.665+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T13:38:25.738+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:38:29.011+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:44:51.447+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T13:44:51.521+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:46:11.168+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T13:46:11.239+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:46:13.369+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.TourController    : Get tour with id 1
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0 
-    where
-        t1_0.id=?
-2025-07-06T13:47:21.850+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T13:47:21.922+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T13:47:24.151+02:00  INFO 1816 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.rest.TourController    : Get tour with id 1
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0 
-    where
-        t1_0.id=?
-2025-07-06T13:54:56.801+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T13:54:56.871+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T14:00:17.897+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T14:00:17.966+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-4] com.fhtw.tpserver.rest.LogController     : Get all logs
-Hibernate: 
-    select
-        tl1_0.log_id,
-        tl1_0.comment,
-        tl1_0.date,
-        tl1_0.difficulty,
-        tl1_0.distance,
-        tl1_0.rating,
-        tl1_0.time,
-        tl1_0.tour_id 
-    from
-        tp_schema.logs tl1_0
-2025-07-06T14:00:22.981+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleting tour with id 1
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0 
-    where
-        t1_0.id=?
-Hibernate: 
-    delete 
-    from
-        tp_schema.tours 
-    where
-        id=?
-2025-07-06T14:00:22.997+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-7] com.fhtw.tpserver.rest.TourController    : Deleted tour with id 1
-2025-07-06T14:00:23.000+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-8] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T14:00:25.753+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-9] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Praterstern Wien
-2025-07-06T14:00:26.111+02:00  INFO 1816 --- [TourplannerServer] [io-8080-exec-10] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/geocode/search?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&text=Höchstädtplatz Wien
-2025-07-06T14:00:26.273+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-1] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.391564,48.217011&end=16.377229,48.239676
-2025-07-06T14:00:26.380+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Create tour FH Technikum Tour
-2025-07-06T14:00:26.380+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-2] com.fhtw.tpserver.rest.TourController    : Coordinates - From: 16.391564,48.217011 To: 16.377229,48.239676
-Hibernate: 
-    insert 
-    into
-        tp_schema.tours
-        (description, distance, estimated_time, from_coords, from_loc, image, name, to_coords, to_loc) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-07-06T14:00:26.396+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-3] com.fhtw.tpserver.rest.TourController    : Get all tours
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0
-2025-07-06T14:00:35.454+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-6] com.fhtw.tpserver.rest.TourController    : Get tour with id 2
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.description,
-        t1_0.distance,
-        t1_0.estimated_time,
-        t1_0.from_coords,
-        t1_0.from_loc,
-        t1_0.image,
-        t1_0.name,
-        t1_0.to_coords,
-        t1_0.to_loc 
-    from
-        tp_schema.tours t1_0 
-    where
-        t1_0.id=?
-2025-07-06T14:00:35.459+02:00  INFO 1816 --- [TourplannerServer] [nio-8080-exec-5] com.fhtw.tpserver.bl.ORSService          : Request: https://api.openrouteservice.org/v2/directions/foot-walking?api_key=5b3ce3597851110001cf62484a0735536d15427f8b3a45b2671fe83a&start=16.391564,48.217011&end=16.377229,48.239676
-2025-07-06T14:00:55.316+02:00  INFO 1816 --- [TourplannerServer] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-07-06T14:00:55.320+02:00  INFO 1816 --- [TourplannerServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-07-06T14:00:55.322+02:00  INFO 1816 --- [TourplannerServer] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-06T14:00:55.323+02:00  INFO 1816 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-06T14:00:55.324+02:00  INFO 1816 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-06T14:52:25.982+02:00  INFO 12084 --- [TourplannerServer] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-06T14:52:25.986+02:00  INFO 12084 --- [TourplannerServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-06T14:52:25.988+02:00  INFO 12084 --- [TourplannerServer] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-06T14:52:25.989+02:00  INFO 12084 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-06T14:52:25.990+02:00  INFO 12084 --- [TourplannerServer] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
