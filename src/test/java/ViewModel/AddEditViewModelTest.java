@@ -16,54 +16,79 @@ class AddEditViewModelTest {
     }
 
     @Test
-    void testCreateTourWithValidInput() {
+    void testCreateTour_withValidInput_shouldReturnTourDto() {
         viewModel.getName().set("Testtour");
         viewModel.getFrom().set("Wien");
         viewModel.getTo().set("Salzburg");
-        viewModel.getDistance().set("300");
-        viewModel.getEstimatedTime().set("5h");
         viewModel.getDescription().set("Eine schöne Route.");
-        viewModel.getId().set("T001");
 
-        TourDto tourDto = viewModel.createTour();
+        TourDto tour = viewModel.createTour();
 
-        assertNotNull(tourDto);
-        assertEquals("Testtour", tourDto.getName());
-        assertEquals("Wien", tourDto.getFrom());
-        assertEquals("Salzburg", tourDto.getTo());
-        assertEquals(300.0, tourDto.getDistance());
-        assertEquals("5h", tourDto.getEstimatedTime());
-        assertEquals("Eine schöne Route.", tourDto.getDescription());
-        assertEquals("T001", tourDto.getId());
+        assertNotNull(tour);
+        assertEquals("Testtour", tour.getName());
+        assertEquals("Wien", tour.getFrom());
+        assertEquals("Salzburg", tour.getTo());
+        assertEquals("Eine schöne Route.", tour.getDescription());
     }
 
     @Test
-    void testCreateTourWithEmptyFields() {
-        viewModel.getName().set(""); // leer!
+    void testCreateTour_withEmptyName_shouldReturnNull() {
         viewModel.getFrom().set("Wien");
         viewModel.getTo().set("Salzburg");
-        viewModel.getDistance().set("300");
-        viewModel.getEstimatedTime().set("5h");
-        viewModel.getDescription().set("Beschreibung");
-        viewModel.getId().set("T002");
+        viewModel.getDescription().set("Route");
 
-        TourDto tourDto = viewModel.createTour();
+        TourDto tour = viewModel.createTour();
 
-        assertNull(tourDto); // sollte fehlschlagen
+        assertNull(tour);
     }
 
     @Test
-    void testCreateTourWithInvalidDistance() {
-        viewModel.getName().set("Fehlertour");
-        viewModel.getFrom().set("Graz");
-        viewModel.getTo().set("Linz");
-        viewModel.getDistance().set("abc"); // ungültig!
-        viewModel.getEstimatedTime().set("3h");
-        viewModel.getDescription().set("Irgendwas");
-        viewModel.getId().set("T003");
+    void testCreateTourWithId_withValidInput_shouldReturnTourDtoWithId() {
+        viewModel.getName().set("Tour 1");
+        viewModel.getFrom().set("Start");
+        viewModel.getTo().set("End");
+        viewModel.getDescription().set("Beschreibung");
+        viewModel.getId().set("123");
 
-        TourDto tourDto = viewModel.createTour();
+        TourDto tour = viewModel.createTourWithId();
 
-        assertNull(tourDto); // Fehler wegen ungültiger Zahl
+        assertNotNull(tour);
+        assertEquals("Tour 1", tour.getName());
+        assertEquals("Start", tour.getFrom());
+        assertEquals("End", tour.getTo());
+        assertEquals("Beschreibung", tour.getDescription());
+        assertEquals(123L, tour.getId());
     }
+
+    @Test
+    void testCreateTourWithId_withEmptyField_shouldReturnNull() {
+        viewModel.getName().set("Tour 1");
+        viewModel.getFrom().set("Start");
+        viewModel.getDescription().set("Beschreibung");
+        viewModel.getId().set("123");
+
+        TourDto tour = viewModel.createTourWithId();
+
+        assertNull(tour);
+    }
+
+    @Test
+    void testCreateTourWithId_withInvalidId_shouldThrowException() {
+        viewModel.getName().set("Tour 1");
+        viewModel.getFrom().set("Start");
+        viewModel.getTo().set("End");
+        viewModel.getDescription().set("Beschreibung");
+        viewModel.getId().set("ABC"); // Invalid Long
+
+        assertThrows(NumberFormatException.class, () -> {
+            viewModel.createTourWithId();
+        });
+    }
+
+    @Test
+    void testCreateTour_withAllFieldsEmpty_shouldReturnNull() {
+        AddEditViewModel viewModel = new AddEditViewModel();
+        assertNull(viewModel.createTour());
+    }
+
 }
